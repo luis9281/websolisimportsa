@@ -89,7 +89,7 @@ Las **19 marcas tienen página con contenido** y logo oficial.
 
 | Marca | Área | Productos | Foto de portada |
 |---|---|---|---|
-| Atramat | Suturas quirúrgicas | 3 líneas | Sí |
+| Atramat | Suturas quirúrgicas | 7 líneas, 26 productos | Sí |
 | Ferno | Atención de emergencias | 4 | Sí |
 | Ritter | Odontología | 1 | Sí |
 | Pega Medical | Ortopedia pediátrica | 5 | Sí |
@@ -127,6 +127,29 @@ Todos se descargaron de los sitios oficiales. Casos especiales:
 | Archivo | Uso | Fuente | Licencia |
 |---|---|---|---|
 | `assets/img/content/hero-equipos.webp` | Fondo de la primera diapositiva del inicio (con atenuación clara) | Quirófano, foto de Arseny Togulev en Unsplash — https://unsplash.com/photos/DE6rYp1nAho (original en `imagenes-originales/fotos/`) | Licencia Unsplash: uso comercial gratuito, sin atribución obligatoria |
+
+### Líneas de suturas Atramat (plantilla "suturas")
+
+Las 7 líneas de `lines` con `"template": "suturas"` se muestran con un diseño propio inspirado en atramat.com (fondo blanco, azul `#1f2a5a`, turquesa `#00a3c4` y un color por sutura, igual al de su caja). El orden del submenú **Suturas** sale de `"menu_suturas"`.
+
+```jsonc
+{
+  "slug": "suturas-quirurgicas-absorbibles", "nav": "Suturas absorbibles",   // texto en el submenú
+  "template": "suturas", "parent": "atramat", "cover": "absorbibles",
+  "callout": { "title": "...", "text": ["..."], "list": ["..."] },          // opcional (bloque destacado)
+  "products": [{
+    "id": "pga-rapid",                      // ancla: project/<línea>/#pga-rapid
+    "name": "PGA Rapid", "subtitle": "Ácido poliglicólico de absorción rápida",
+    "color": "#e73745",                     // color de la ficha
+    "indication": "...",
+    "stats": [{ "label": "Absorción total", "value": "45–60 días" }],
+    "tech": [["Composición", "..."], ["Absorción", "Hidrólisis"]],
+    "features": ["..."], "models": ["..."], "image": "assets/img/content/..."
+  }]
+}
+```
+
+Fuente del contenido: fichas oficiales de atramat.com (octubre 2026), traducidas. Las fotos de portada de Mínima invasión, Propymesh, Agujas y Bonewax son del sitio de Atramat (originales en `imagenes-originales/atramat/`); algunas tienen texto en inglés.
 
 ---
 
@@ -177,7 +200,6 @@ Si un producto acumula mucha información, conviene darle su **propia página** 
 - [ ] Confirmar con Solis los productos que realmente se venden de cada marca nueva.
 - [ ] Fotos de portada para las 10 marcas nuevas (hoy muestran el logo).
 - [ ] Logo propio de SurgiSeal.
-- [ ] Llenar las líneas de Atramat vacías: no absorbibles, PLUS, PGA Rapid.
 - [ ] SurgiSeal y Brix 3000: convertir "características" en productos reales (presentaciones).
 - [ ] Ampliar marcas con pocos productos (Ritter: 1).
 - [ ] Fotos por producto (hoy solo hay portadas de marca).
@@ -192,3 +214,4 @@ Si un producto acumula mucha información, conviene darle su **propia página** 
 | 2026-10-21 | `scripts/build.py` y `scripts/procesar_logos.py`; logos oficiales de las 20 marcas; contenido para Sunset, Digitsole, Lasotronix, H.B. Fuller, TUR, Vcomin, Trulife, MIR, GV Health y Carestream Dental; muro de logos en la portada; redirecciones de TUR |
 | 2026-10-21 | Se eliminó Magnamed (ya no se distribuye): datos, página, imágenes, logo, formulario de contacto y script de imágenes; `/project/magnamed/` redirige al catálogo |
 | 2026-10-21 | Foto de fondo (Unsplash) con atenuación en la primera diapositiva del inicio |
+| 2026-10-21 | Submenú Suturas con 7 líneas Atramat (absorbibles, no absorbibles, Plus, mínima invasión, Propymesh, agujas, bonewax) con fichas técnicas; PGA Rapid se integró a absorbibles (redirección 301) |

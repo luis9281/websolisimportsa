@@ -36,8 +36,8 @@
           "label": "países atendidos por Atramat"
         },
         {
-          "value": "3",
-          "label": "categorías: absorbibles, no absorbibles y PLUS"
+          "value": "7",
+          "label": "líneas: absorbibles, no absorbibles, PLUS, mínima invasión, malla, agujas y bonewax"
         },
         {
           "value": "8",
@@ -48,7 +48,11 @@
       "lines": [
         "suturas-quirurgicas-absorbibles",
         "suturas-quirurgicas-no-absorbibles",
-        "suturas-quirurgicas-plus-antibacterianas"
+        "suturas-quirurgicas-plus-antibacterianas",
+        "minima-invasion",
+        "propymesh",
+        "agujas",
+        "bonewax"
       ]
     },
     {
@@ -978,112 +982,835 @@
   "lines": [
     {
       "slug": "suturas-quirurgicas-absorbibles",
-      "parent": "atramat",
+      "nav": "Suturas absorbibles",
       "name": "Suturas quirúrgicas absorbibles",
       "area": "Atramat · Suturas",
       "tagline": "Calidad y valor para el cirujano que los busca",
-      "meta": "Suturas quirúrgicas absorbibles Atramat en Panamá: PGA Rapid, PGA, PGLA 90, PGC25, PDX y catgut. Solis Import S.A.",
+      "meta": "Suturas absorbibles Atramat en Panamá: PGA Rapid, PGA, PGLA 90, PGLA 90 Rápido, PGC25, PDX y catgut crómico y simple. Solis Import S.A.",
       "cover": "absorbibles",
       "description": [
-        "Línea de suturas absorbibles pensada para cirujanos que buscan calidad y buen valor. Se elabora con materias primas de calidad y sus procedimientos de calidad se verifican a diario."
+        "Las suturas quirúrgicas Atramat® ofrecen innovación, calidad y tecnología. Su gama Premium de materiales y agujas está hecha para las especialidades y los cirujanos más exigentes, y su línea Standard lleva esa calidad a un precio accesible.",
+        "La línea absorbible se elabora con materias primas de calidad y sus procesos se validan a diario. Está pensada para cirujanos que buscan la mejor calidad y valor en sus procedimientos."
       ],
-      "highlights": [],
       "products": [
         {
+          "id": "pga-rapid",
           "name": "PGA Rapid",
-          "desc": "Ácido poliglicólico de absorción rápida.",
-          "link": "pga-rapid"
+          "subtitle": "Ácido poliglicólico de absorción rápida",
+          "color": "#e73745",
+          "indication": "Uso general en la aproximación de tejidos blandos, piel (intradérmica) y mucosas. No está indicada para procedimientos cardiovasculares ni neurológicos.",
+          "stats": [
+            {
+              "label": "Resistencia",
+              "value": "50 % de su resistencia original al final de la primera semana"
+            },
+            {
+              "label": "Absorción total",
+              "value": "45–60 días"
+            }
+          ],
+          "tech": [
+            [
+              "Composición",
+              "Filamentos de homopolímero de ácido glicólico de bajo peso molecular"
+            ],
+            [
+              "Recubrimiento",
+              "Policaprolactona y estearato de calcio"
+            ],
+            [
+              "Absorción",
+              "Hidrólisis"
+            ],
+            [
+              "Color de la hebra",
+              "Sin teñir"
+            ]
+          ],
+          "features": [
+            "Mínima reacción tisular.",
+            "Mayor seguridad en el nudo con la técnica quirúrgica adecuada."
+          ]
         },
         {
+          "id": "pga",
           "name": "PGA",
-          "desc": "Consulta por calibres y agujas disponibles."
+          "subtitle": "Ácido poliglicólico",
+          "color": "#aa95c5",
+          "indication": "Uso general en la aproximación y/o ligadura de tejidos blandos, y en procedimientos oftálmicos.",
+          "stats": [
+            {
+              "label": "Resistencia",
+              "value": "Más del 70 % a la segunda semana y 50 % a la tercera"
+            },
+            {
+              "label": "Absorción total",
+              "value": "60–90 días"
+            }
+          ],
+          "tech": [
+            [
+              "Composición",
+              "Filamentos de homopolímero de ácido glicólico"
+            ],
+            [
+              "Absorción",
+              "Hidrólisis"
+            ],
+            [
+              "Color de la hebra",
+              "Violeta o sin teñir"
+            ]
+          ],
+          "features": [
+            "Mínima reacción tisular.",
+            "Mayor seguridad en el nudo con la técnica quirúrgica adecuada.",
+            "El color violeta ofrece excelente visibilidad en el campo quirúrgico."
+          ]
         },
         {
+          "id": "pgla-90",
           "name": "PGLA 90",
-          "desc": "Consulta por calibres y agujas disponibles."
+          "subtitle": "Poliglactina 910 · poli(glicólido-co-L-láctido)",
+          "color": "#93559c",
+          "indication": "Aproximación y/o ligadura de tejidos blandos y procedimientos oftálmicos. No está indicada en procedimientos cardiovasculares, neurológicos ni de microcirugía.",
+          "stats": [
+            {
+              "label": "Resistencia",
+              "value": "75 % de su resistencia original a la segunda semana"
+            },
+            {
+              "label": "Absorción total",
+              "value": "60–80 días"
+            }
+          ],
+          "tech": [
+            [
+              "Composición",
+              "Copolímero de ácido glicólico y L-láctido"
+            ],
+            [
+              "Recubrimiento",
+              "Poli(glicólido-co-L-láctido) y estearato de calcio"
+            ],
+            [
+              "Absorción",
+              "Hidrólisis"
+            ],
+            [
+              "Color de la hebra",
+              "Violeta o beige (sin teñir)"
+            ]
+          ],
+          "features": [
+            "Mínima reacción tisular.",
+            "Mayor seguridad en el nudo con la técnica quirúrgica adecuada.",
+            "El color violeta ofrece excelente visibilidad en el campo quirúrgico."
+          ]
         },
         {
+          "id": "pgla-90-rapido",
           "name": "PGLA 90 Rápido",
-          "desc": "Consulta por calibres y agujas disponibles."
+          "subtitle": "Poliglactina 910 de absorción rápida",
+          "color": "#f198b2",
+          "indication": "Aproximación superficial y ligadura de tejidos blandos, piel y mucosas. No está indicada para uso oftálmico, cardiovascular ni neurológico.",
+          "stats": [
+            {
+              "label": "Resistencia",
+              "value": "50 % de su resistencia original a la primera semana"
+            },
+            {
+              "label": "Absorción total",
+              "value": "42 días"
+            }
+          ],
+          "tech": [
+            [
+              "Composición",
+              "Copolímero de ácido glicólico y L-láctido"
+            ],
+            [
+              "Recubrimiento",
+              "Poli(glicólido-co-L-láctido) y estearato de calcio"
+            ],
+            [
+              "Absorción",
+              "Hidrólisis"
+            ],
+            [
+              "Color de la hebra",
+              "Beige (sin teñir)"
+            ]
+          ],
+          "features": [
+            "Mínima reacción tisular.",
+            "Mayor seguridad en el nudo con la técnica quirúrgica adecuada."
+          ]
         },
         {
+          "id": "pgc25",
           "name": "PGC25",
-          "desc": "Consulta por calibres y agujas disponibles."
+          "subtitle": "Poli(glicólido-co-ε-caprolactona)",
+          "color": "#f2a18c",
+          "indication": "Aproximación de tejidos blandos. No está indicada en procedimientos cardiovasculares ni neurológicos.",
+          "stats": [
+            {
+              "label": "Resistencia",
+              "value": "Violeta: 68 % a la 1.ª semana y 41 % a la 2.ª. Sin teñir: 79 % y 40 %"
+            },
+            {
+              "label": "Absorción total",
+              "value": "110 días (hebra violeta)"
+            }
+          ],
+          "tech": [
+            [
+              "Composición",
+              "Copolímero de glicólido y caprolactona"
+            ],
+            [
+              "Absorción",
+              "Hidrólisis"
+            ],
+            [
+              "Color de la hebra",
+              "Violeta o sin teñir"
+            ]
+          ],
+          "features": [
+            "Mínima reacción tisular.",
+            "Mayor seguridad en el nudo con la técnica quirúrgica adecuada.",
+            "El color violeta ofrece excelente visibilidad en el campo quirúrgico."
+          ]
         },
         {
+          "id": "pdx",
           "name": "PDX",
-          "desc": "Consulta por calibres y agujas disponibles."
+          "subtitle": "Polidioxanona (p-dioxanona)",
+          "color": "#a2a1a4",
+          "indication": "Aproximación y/o ligadura de tejidos blandos, incluida la cirugía cardiovascular pediátrica. Recomendada para cierres de heridas que requieren soporte prolongado.",
+          "stats": [
+            {
+              "label": "Resistencia",
+              "value": "70 % a la cuarta semana y 50 % a la sexta"
+            },
+            {
+              "label": "Absorción total",
+              "value": "180–220 días"
+            }
+          ],
+          "tech": [
+            [
+              "Composición",
+              "Monómero de p-dioxanona"
+            ],
+            [
+              "Absorción",
+              "Hidrólisis"
+            ],
+            [
+              "Color de la hebra",
+              "Violeta o sin teñir"
+            ]
+          ],
+          "features": [
+            "Mínima reacción tisular.",
+            "Mayor seguridad en el nudo con la técnica quirúrgica adecuada.",
+            "El color violeta ofrece excelente visibilidad en el campo quirúrgico."
+          ]
         },
         {
-          "name": "Catgut",
-          "desc": "Consulta por calibres y agujas disponibles."
+          "id": "catgut-cromico",
+          "name": "Catgut crómico",
+          "subtitle": "Colágeno con sales de cromo",
+          "color": "#d2b88a",
+          "indication": "Aproximación o ligadura de tejidos blandos, incluidos procedimientos oftálmicos.",
+          "stats": [
+            {
+              "label": "Resistencia",
+              "value": "Se mantiene entre la segunda y la tercera semana tras la implantación"
+            },
+            {
+              "label": "Absorción total",
+              "value": "60–90 días"
+            }
+          ],
+          "tech": [
+            [
+              "Composición",
+              "Colágeno, proteína formada por 3 polipéptidos entrelazados"
+            ],
+            [
+              "Recubrimiento",
+              "Sales de cromo"
+            ],
+            [
+              "Absorción",
+              "Fagocitosis"
+            ],
+            [
+              "Color de la hebra",
+              "Marrón oscuro"
+            ]
+          ],
+          "features": [
+            "Reacción tisular moderada.",
+            "Absorción uniforme.",
+            "Mínimo arrastre tisular."
+          ]
         },
         {
-          "name": "Catgut liso",
-          "desc": "Consulta por calibres y agujas disponibles."
+          "id": "catgut-simple",
+          "name": "Catgut simple",
+          "subtitle": "Colágeno sin recubrimiento",
+          "color": "#f9dc3f",
+          "indication": "Aproximación o ligadura de tejidos blandos, incluidos procedimientos oftálmicos. No se usa en tejido cardiovascular ni nervioso.",
+          "stats": [
+            {
+              "label": "Resistencia",
+              "value": "Se mantiene entre la primera y la segunda semana tras la implantación"
+            },
+            {
+              "label": "Absorción total",
+              "value": "50–70 días"
+            }
+          ],
+          "tech": [
+            [
+              "Composición",
+              "Colágeno, proteína formada por 3 polipéptidos entrelazados"
+            ],
+            [
+              "Recubrimiento",
+              "Sin recubrimiento"
+            ],
+            [
+              "Absorción",
+              "Fagocitosis"
+            ],
+            [
+              "Color de la hebra",
+              "Amarillo"
+            ]
+          ],
+          "features": [
+            "Reacción tisular moderada.",
+            "Absorción uniforme.",
+            "Mínimo arrastre tisular."
+          ]
         }
-      ]
+      ],
+      "parent": "atramat",
+      "template": "suturas",
+      "highlights": []
     },
     {
       "slug": "suturas-quirurgicas-no-absorbibles",
-      "parent": "atramat",
+      "nav": "Suturas no absorbibles",
       "name": "Suturas quirúrgicas no absorbibles",
       "area": "Atramat · Suturas",
-      "tagline": "Para cirujanos que buscan la mejor calidad y valor",
-      "meta": "Suturas quirúrgicas no absorbibles Atramat en Panamá. Calidad y valor para cada procedimiento. Solis Import S.A.",
+      "tagline": "Soporte permanente para cada especialidad",
+      "meta": "Suturas no absorbibles Atramat en Panamá: nylon, polipropileno, poliéster, seda, acero inoxidable, PVDF y alambre de marcapasos. Solis Import S.A.",
       "cover": "no-absorbibles",
       "description": [
-        "Material de sutura no absorbible hecho para los cirujanos que buscan la mejor calidad y valor en sus procedimientos."
+        "Las suturas no absorbibles Atramat® llevan a prueba toda la innovación y experiencia de la marca. Se elaboran con materias primas de calidad y sus procesos se validan a diario.",
+        "Están hechas para cirujanos que buscan la mejor calidad y valor en sus procedimientos, desde el cierre general hasta la cirugía cardiovascular."
       ],
-      "highlights": [],
-      "products": []
+      "products": [
+        {
+          "id": "nylon",
+          "name": "Nylon",
+          "subtitle": "Monofilamento de poliamida",
+          "color": "#7dbf77",
+          "indication": "Aproximación y/o ligadura de tejidos blandos, incluidos procedimientos de cierre general, uso cuticular y cirugía plástica.",
+          "tech": [
+            [
+              "Composición",
+              "Poliamida alifática 6 o 6.6"
+            ],
+            [
+              "Resistencia",
+              "Pérdida gradual con el tiempo"
+            ],
+            [
+              "Color de la hebra",
+              "Azul o negro"
+            ]
+          ],
+          "features": [
+            "Mínima reacción tisular.",
+            "Pasa suavemente por los tejidos y minimiza el arrastre tisular.",
+            "Permite retirar los puntos con facilidad, lo que evita el arrastre de microorganismos."
+          ]
+        },
+        {
+          "id": "polipropileno",
+          "name": "Polipropileno",
+          "subtitle": "Monofilamento para cirugía cardiovascular",
+          "color": "#8ab6c9",
+          "indication": "Aproximación y/o ligadura de tejidos blandos. Recomendada en cirugía cardiovascular (revascularización coronaria, reemplazo de válvulas aórtica, mitral y tricúspide), cardiopatías congénitas y cirugía vascular periférica.",
+          "tech": [
+            [
+              "Composición",
+              "Estereoisómero isotáctico de homopolímero de polipropileno"
+            ],
+            [
+              "Color de la hebra",
+              "Azul"
+            ]
+          ],
+          "features": [
+            "Mínima reacción tisular.",
+            "Diámetro uniforme que favorece el paso suave por los tejidos.",
+            "Soporte permanente sin comprometer su resistencia.",
+            "Biocompatibilidad, suavidad y plastodeformación.",
+            "Excelente seguridad en el nudo.",
+            "Resistente a la flexión repetida, ideal para prótesis cardiacas y anastomosis vasculares."
+          ]
+        },
+        {
+          "id": "poliester",
+          "name": "Poliéster",
+          "subtitle": "Multifilamento recubierto",
+          "color": "#f3a01b",
+          "indication": "Procedimientos cardiovasculares como el reemplazo de válvulas aórtica, mitral y tricúspide, y el cierre de esternón.",
+          "tech": [
+            [
+              "Composición",
+              "Fibras de poliéster de ácido tereftálico o sus ésteres y etilenglicol"
+            ],
+            [
+              "Recubrimiento",
+              "Silicona o teflón"
+            ],
+            [
+              "Color de la hebra",
+              "Blanco o verde"
+            ]
+          ],
+          "features": [
+            "Soporte permanente sin comprometer su resistencia.",
+            "Mayor seguridad en el nudo con la técnica quirúrgica adecuada.",
+            "Biocompatible y suave, con mínimo arrastre tisular.",
+            "Resistente a la flexión repetida en prótesis cardiacas y anastomosis vasculares."
+          ]
+        },
+        {
+          "id": "seda",
+          "name": "Seda",
+          "subtitle": "Fibroína natural recubierta",
+          "color": "#8acdd7",
+          "indication": "Aproximación y/o ligadura de tejidos blandos, incluidos cierre general, oftalmología, microcirugía, cirugía cardiovascular y tejido neural.",
+          "tech": [
+            [
+              "Composición",
+              "Fibroína, proteína del gusano de seda Bombyx mori"
+            ],
+            [
+              "Recubrimiento",
+              "Silicona"
+            ],
+            [
+              "Color de la hebra",
+              "Azul, negro o blanco"
+            ]
+          ],
+          "features": [
+            "Mayor seguridad en el nudo con la técnica quirúrgica adecuada.",
+            "Pierde por completo su resistencia en un plazo no mayor de un año."
+          ]
+        },
+        {
+          "id": "acero-inoxidable",
+          "name": "Acero inoxidable",
+          "subtitle": "Sutura de alta resistencia",
+          "color": "#fbe184",
+          "indication": "Uso ortopédico y procedimientos que requieren un soporte artificial de alta resistencia, como el cierre de esternón.",
+          "tech": [
+            [
+              "Composición",
+              "Acero inoxidable"
+            ]
+          ],
+          "features": [
+            "Excelente soporte para estructuras óseas.",
+            "Sin pérdida significativa de resistencia in vivo.",
+            "Mínima reacción tisular; material inerte."
+          ]
+        },
+        {
+          "id": "pvdf",
+          "name": "PVDF",
+          "subtitle": "Fluoruro de polivinilideno",
+          "color": "#0099d5",
+          "indication": "Consulta calibres, agujas y presentaciones disponibles con nuestro equipo."
+        },
+        {
+          "id": "alambre-marcapasos",
+          "name": "Alambre de marcapasos temporal",
+          "subtitle": "Electrodo epicárdico temporal",
+          "color": "#1f2a5a",
+          "indication": "Diseñado para la estimulación y detección auricular y ventricular temporal, con un tiempo de implantación esperado no mayor de 7 días.",
+          "tech": [
+            [
+              "Electrodo",
+              "Alambre multifilamento aislado con recubrimiento de PTFE"
+            ],
+            [
+              "Extremo distal",
+              "Aguja cónica circular"
+            ],
+            [
+              "Extremo proximal",
+              "Aguja recta cortante para atravesar la pared torácica"
+            ]
+          ],
+          "features": [
+            "Conexión directa con el miocardio."
+          ]
+        }
+      ],
+      "parent": "atramat",
+      "template": "suturas",
+      "highlights": []
     },
     {
       "slug": "suturas-quirurgicas-plus-antibacterianas",
-      "parent": "atramat",
+      "nav": "Atramat Plus",
       "name": "Suturas quirúrgicas PLUS (antibacterianas)",
       "area": "Atramat · Suturas",
       "tagline": "Recubiertas con diacetato de clorhexidina",
-      "meta": "Suturas quirúrgicas PLUS antibacterianas Atramat con diacetato de clorhexidina en Panamá. Solis Import S.A.",
+      "meta": "Suturas antibacterianas Atramat PLUS en Panamá: PGC25 Plus, PGLA 90 Plus y PDX Plus con diacetato de clorhexidina. Solis Import S.A.",
       "cover": "plus",
       "description": [
-        "Las suturas Atramat® Plus están recubiertas con diacetato de clorhexidina, un agente antibacteriano de amplio espectro que inhibe el crecimiento de bacterias."
+        "Las suturas Atramat® PLUS ofrecen la innovación, calidad y tecnología de la gama Premium, con un recubrimiento antibacteriano de amplio espectro para una mayor protección durante la cirugía.",
+        "Están recubiertas con diacetato de clorhexidina, que inhibe el crecimiento de bacterias Gram positivas y Gram negativas y actúa como fungicida contra levaduras y dermatofitos."
       ],
-      "highlights": [
+      "callout": {
+        "title": "¿Por qué una sutura antibacteriana?",
+        "text": [
+          "Las suturas con recubrimiento antibacteriano reducen de forma significativa las infecciones del sitio quirúrgico, con el mismo desempeño y control al que el cirujano está acostumbrado.",
+          "El diacetato de clorhexidina no se absorbe en el cuerpo y las bacterias no han desarrollado resistencia a su efecto. En pruebas in vitro, las suturas PLUS crean un halo de protección que inhibe el crecimiento de:"
+        ],
+        "list": [
+          "Staphylococcus aureus",
+          "Staphylococcus epidermidis",
+          "Escherichia coli"
+        ]
+      },
+      "products": [
         {
-          "value": "Clorhexidina",
-          "label": "diacetato, antibacteriano de amplio espectro"
-        }
-      ],
-      "products": []
-    },
-    {
-      "slug": "pga-rapid",
-      "parent": "atramat",
-      "name": "PGA Rapid",
-      "area": "Atramat · Suturas absorbibles",
-      "tagline": "Ácido poliglicólico de rápida absorción",
-      "meta": "Sutura PGA Rapid Atramat en Panamá: ácido poliglicólico de rápida absorción, absorción total en 45 a 60 días. Solis Import S.A.",
-      "cover": "pga-rapid",
-      "description": [
-        "Sutura de ácido poliglicólico de rápida absorción, de uso general para aproximar tejidos blandos, piel (intradérmica) y mucosas. No está indicada para procedimientos cardiovasculares ni neurológicos.",
-        "Para cotizar, indica la cantidad, el calibre y el tamaño de aguja que necesitas."
-      ],
-      "highlights": [
-        {
-          "value": "50 %",
-          "label": "de su resistencia original al final de la primera semana"
+          "id": "pgc25-plus",
+          "name": "PGC25 Plus",
+          "subtitle": "Poli(glicólido-co-ε-caprolactona) antibacteriana",
+          "color": "#f2a18c",
+          "tech": [
+            [
+              "Composición",
+              "Copolímero de glicólido y caprolactona"
+            ],
+            [
+              "Recubrimiento antibacteriano",
+              "Diacetato de clorhexidina"
+            ],
+            [
+              "Absorción",
+              "Hidrólisis"
+            ],
+            [
+              "Color de la hebra",
+              "Violeta o sin teñir"
+            ]
+          ],
+          "features": [
+            "El diacetato de clorhexidina inhibe bacterias como Staphylococcus aureus, Staphylococcus epidermidis y Escherichia coli.",
+            "Mínima reacción inflamatoria en el tejido.",
+            "Alta seguridad en el nudo.",
+            "Manejo superior.",
+            "El color violeta ofrece excelente visibilidad en el campo quirúrgico."
+          ]
         },
         {
-          "value": "45–60 días",
-          "label": "absorción total"
+          "id": "pgla-90-plus",
+          "name": "PGLA 90 Plus",
+          "subtitle": "Poliglactina 910 antibacteriana",
+          "color": "#93559c",
+          "tech": [
+            [
+              "Composición",
+              "Copolímero de ácido glicólico y láctido"
+            ],
+            [
+              "Recubrimiento antibacteriano",
+              "Diacetato de clorhexidina"
+            ],
+            [
+              "Recubrimiento",
+              "Poli(glicólido-co-láctido) y estearato de calcio"
+            ],
+            [
+              "Absorción",
+              "Hidrólisis"
+            ],
+            [
+              "Color de la hebra",
+              "Violeta o beige (sin teñir)"
+            ]
+          ],
+          "features": [
+            "El diacetato de clorhexidina inhibe bacterias como Staphylococcus aureus, Staphylococcus epidermidis y Escherichia coli.",
+            "Mínima reacción inflamatoria en el tejido.",
+            "Alta seguridad en el nudo.",
+            "Manejo superior.",
+            "El color violeta ofrece excelente visibilidad en el campo quirúrgico."
+          ]
+        },
+        {
+          "id": "pdx-plus",
+          "name": "PDX Plus",
+          "subtitle": "Polidioxanona antibacteriana",
+          "color": "#a2a1a4",
+          "tech": [
+            [
+              "Composición",
+              "Monómero de p-dioxanona"
+            ],
+            [
+              "Recubrimiento antibacteriano",
+              "Diacetato de clorhexidina"
+            ],
+            [
+              "Absorción",
+              "Hidrólisis"
+            ],
+            [
+              "Color de la hebra",
+              "Violeta"
+            ]
+          ],
+          "features": [
+            "El diacetato de clorhexidina inhibe bacterias como Staphylococcus aureus, Staphylococcus epidermidis y Escherichia coli.",
+            "Mínima reacción inflamatoria en el tejido.",
+            "Alta seguridad en el nudo.",
+            "Manejo superior.",
+            "El color violeta ofrece excelente visibilidad en el campo quirúrgico."
+          ]
         }
       ],
-      "products": []
+      "parent": "atramat",
+      "template": "suturas",
+      "highlights": []
+    },
+    {
+      "slug": "minima-invasion",
+      "nav": "Mínima invasión",
+      "name": "Cirugía de mínima invasión",
+      "area": "Atramat · Laparoscopía",
+      "tagline": "Instrumental y dispositivos para cirugía laparoscópica",
+      "meta": "Atramat mínima invasión en Panamá: trócar laparoscópico, instrumental alemán reutilizable, PGLA Loop y clips de ligadura de titanio. Solis Import S.A.",
+      "cover": "minima-invasion",
+      "description": [
+        "Los productos Atramat® para cirugía de mínima invasión forman parte de su portafolio de nuevos dispositivos médicos.",
+        "El instrumental se fabrica en Alemania por Hermann Medizintechnik bajo un sistema de gestión de calidad ISO 13485."
+      ],
+      "products": [
+        {
+          "id": "trocar",
+          "name": "Trócar laparoscópico Atramat",
+          "subtitle": "Con micro-cuchilla de fibra de carbono",
+          "color": "#00a3c4",
+          "image": "assets/img/content/trocar-detalle.webp",
+          "tech": [
+            [
+              "Micro-cuchilla",
+              "Fibra de carbono; incisión de solo 3 mm y presión controlada"
+            ],
+            [
+              "Protección automática",
+              "Evita la exposición de la micro-cuchilla dentro de la cavidad abdominal"
+            ],
+            [
+              "Dilatación secundaria",
+              "Amplía la incisión de la micro-cuchilla y facilita la penetración sin arrastre"
+            ]
+          ],
+          "features": [
+            "Cánula transparente.",
+            "Válvula universal ajustable.",
+            "Sello removible de media vuelta.",
+            "Válvula Luer-Lock de alta presión.",
+            "Diseño convencional y ergonómico."
+          ]
+        },
+        {
+          "id": "instrumental",
+          "name": "Instrumental y accesorios de laparoscopía",
+          "subtitle": "Fabricados en Alemania",
+          "color": "#1f2a5a",
+          "indication": "Instrumentos quirúrgicos de alta precisión para distintos campos de aplicación. La tecnología de producción de última generación, combinada con la experiencia de especialistas, da instrumentos de la mayor precisión posible.",
+          "features": [
+            "Fabricados en Alemania con tecnología de precisión.",
+            "Instrumentos reutilizables.",
+            "Autoclavables."
+          ]
+        },
+        {
+          "id": "pgla-loop",
+          "name": "PGLA Loop",
+          "subtitle": "Lazo de ligadura preformado PGLA 90",
+          "color": "#93559c",
+          "indication": "Diseñado para cirugía laparoscópica, por ejemplo para ligar la base del apéndice o constreñir tejido protruido como pólipos o várices.",
+          "features": [
+            "Aplicador de aluminio que permite controlar el nudo preformado.",
+            "El nudo se desliza con facilidad para posicionar el lazo correctamente."
+          ]
+        },
+        {
+          "id": "clips-ligadura",
+          "name": "Clips de ligadura",
+          "subtitle": "Clips hemostáticos de titanio",
+          "color": "#a2a1a4",
+          "indication": "Dispositivos implantables de titanio fabricados en Alemania. El clip actúa como una grapa que crea compresión directa, evita el sangrado y favorece la cicatrización sin dañar los tejidos cercanos."
+        }
+      ],
+      "parent": "atramat",
+      "template": "suturas",
+      "highlights": []
+    },
+    {
+      "slug": "propymesh",
+      "nav": "Propymesh",
+      "name": "PropyMesh Flex",
+      "area": "Atramat · Malla quirúrgica",
+      "tagline": "Malla quirúrgica sintética parcialmente absorbible",
+      "meta": "Atramat PropyMesh Flex en Panamá: malla parcialmente absorbible de PGC25 y polipropileno para reparación de hernias. Solis Import S.A.",
+      "cover": "propymesh",
+      "description": [
+        "La reparación de hernias es uno de los procedimientos quirúrgicos más comunes: el área débil de la pared abdominal se cubre con una prótesis (malla) que se fija al tejido muscular.",
+        "Atramat® PropyMesh Flex está hecha en partes iguales de monofilamento de polipropileno no absorbible y de poli(glicólido-co-ε-caprolactona) (PGC25), y está diseñada para soportar los esfuerzos fisiológicos de la pared abdominal."
+      ],
+      "products": [
+        {
+          "id": "propymesh-flex",
+          "name": "Atramat® PropyMesh Flex",
+          "subtitle": "PGC25 + polipropileno",
+          "color": "#8acdd7",
+          "indication": "El PGC25 se absorbe por hidrólisis y es metabolizado por el cuerpo; al completarse la absorción solo permanece el polipropileno. La malla tiene partes teñidas para su identificación.",
+          "stats": [
+            {
+              "label": "Absorción total del PGC25",
+              "value": "90–110 días"
+            },
+            {
+              "label": "Material permanente",
+              "value": "Polipropileno"
+            }
+          ],
+          "features": [
+            "Perfil de absorción ideal: absorción total entre 90 y 110 días.",
+            "Reacción tisular moderada y excelente biocompatibilidad.",
+            "Elongación controlada: elasticidad tridireccional que acompaña el movimiento natural de la pared abdominal.",
+            "Menos cuerpo extraño: más comodidad y movilidad para el paciente.",
+            "Fijación: la malla se sutura de forma cómoda y segura."
+          ],
+          "models": [
+            "Hernia inguinal",
+            "Hernia incisional",
+            "Hernia extraperitoneal",
+            "Hernia abdominal",
+            "Reconstrucción de pared abdominal"
+          ]
+        }
+      ],
+      "parent": "atramat",
+      "template": "suturas",
+      "highlights": []
+    },
+    {
+      "slug": "agujas",
+      "nav": "Agujas",
+      "name": "Agujas quirúrgicas",
+      "area": "Atramat · Agujas",
+      "tagline": "Tecnología alemana en cada punta",
+      "meta": "Agujas quirúrgicas Atramat en Panamá: tecnología de fabricación alemana para cirugía cardiovascular, oftálmica y plástica. Solis Import S.A.",
+      "cover": "agujas",
+      "description": [
+        "La calidad y la tecnología de las agujas Atramat® son la punta de su proceso de innovación. Se fabrican con tecnología alemana y están siliconadas para pasar con suavidad por los tejidos.",
+        "Combinan curvatura, longitud y punta para cada procedimiento de alta especialidad."
+      ],
+      "products": [
+        {
+          "id": "alta-especialidad",
+          "name": "Agujas para cirugía de alta especialidad",
+          "subtitle": "Siliconadas",
+          "color": "#00a3c4",
+          "indication": "Agujas para cirugía cardiovascular, oftálmica y plástica, estética y reconstructiva.",
+          "models": [
+            "Cardiovascular",
+            "Oftálmica",
+            "Plástica y reconstructiva"
+          ]
+        },
+        {
+          "id": "curvaturas",
+          "name": "Curvaturas disponibles",
+          "subtitle": "Geometría de la aguja",
+          "color": "#1f2a5a",
+          "indication": "Cada aguja se describe por su punta, cuerpo, diámetro de ensamble, longitud y curvatura.",
+          "models": [
+            "1/4 de círculo (90°)",
+            "3/8 de círculo (135°)",
+            "1/2 círculo (180°)",
+            "5/8 de círculo (225°)",
+            "Recta"
+          ]
+        }
+      ],
+      "parent": "atramat",
+      "template": "suturas",
+      "highlights": []
+    },
+    {
+      "slug": "bonewax",
+      "nav": "Bonewax",
+      "name": "Bonewax · Cera para hueso",
+      "area": "Atramat · Hemostasia",
+      "tagline": "Control del sangrado en superficies óseas",
+      "meta": "Atramat Bonewax en Panamá: cera para hueso que controla el sangrado de superficies óseas como barrera mecánica. Solis Import S.A.",
+      "cover": "bonewax",
+      "description": [
+        "Atramat® Bonewax se usa para controlar el sangrado de las superficies óseas."
+      ],
+      "products": [
+        {
+          "id": "bonewax",
+          "name": "Atramat® Bonewax",
+          "subtitle": "Cera para hueso estéril",
+          "color": "#fbe184",
+          "features": [
+            "Actúa como barrera mecánica (tapón); no tiene acción bioquímica en el organismo.",
+            "Con la técnica quirúrgica adecuada es suave y fácil de aplicar.",
+            "Se ablanda con técnica aséptica hasta la consistencia deseada."
+          ]
+        }
+      ],
+      "parent": "atramat",
+      "template": "suturas",
+      "highlights": []
     }
   ],
   "redirects": {
     "project/tur-gmbh/": "project/tur/",
-    "project/tur-therapy/": "project/tur/"
-  }
+    "project/tur-therapy/": "project/tur/",
+    "project/pga-rapid/": "project/suturas-quirurgicas-absorbibles/#pga-rapid"
+  },
+  "menu_suturas": [
+    "suturas-quirurgicas-absorbibles",
+    "suturas-quirurgicas-no-absorbibles",
+    "suturas-quirurgicas-plus-antibacterianas",
+    "minima-invasion",
+    "propymesh",
+    "agujas",
+    "bonewax"
+  ]
 }

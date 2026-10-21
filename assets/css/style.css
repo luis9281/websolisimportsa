@@ -428,3 +428,105 @@ body:has(.form-card) .wa-float { display: none; }
 .mark-facts div + div { border-left: 1px solid var(--line); }
 .mark-facts dt { font: 700 clamp(1.5rem, 2.6vw, 2rem)/1 var(--font-head); color: var(--cobalt); }
 .mark-facts dd { margin: .4rem 0 0; padding-inline: .5rem; font-size: .9rem; color: var(--muted); line-height: 1.35; }
+
+/* ==========================================================================
+   Menú: submenú de Suturas
+   ========================================================================== */
+.nav .has-sub { position: relative; }
+.nav .sub { display: none; position: absolute; top: 100%; left: 0; z-index: 60; min-width: 240px; flex-direction: column; gap: 0; margin: 0; padding: .5rem 0; list-style: none; background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--teal); border-radius: 0 0 var(--r-md) var(--r-md); box-shadow: 0 14px 30px rgba(10,37,64,.12); }
+.nav .sub a { padding: .55rem 1.1rem; font-weight: 500; border-bottom: 0; white-space: nowrap; }
+.nav .sub a:hover { background: var(--mist); color: var(--cobalt); }
+.nav .has-sub:hover .sub, .nav .has-sub:focus-within .sub { display: flex; }
+@media (max-width: 960px) {
+  .nav .sub { display: flex; position: static; min-width: 0; padding: 0 0 .4rem .9rem; border: 0; border-left: 2px solid var(--line); border-radius: 0; box-shadow: none; margin-left: 1rem; }
+  .nav .sub a { padding: .4rem .8rem; font-size: .95rem; }
+}
+
+/* ==========================================================================
+   Líneas Atramat (plantilla "suturas"): fondo blanco, azul Atramat y color por sutura
+   ========================================================================== */
+:root { --atr-navy: #1f2a5a; --atr-cyan: #00a3c4; }
+.sx-tabs { display: flex; gap: .4rem; overflow-x: auto; list-style: none; margin: 0 0 .5rem; padding: 0 0 .5rem; scrollbar-width: thin; }
+.sx-tabs a { display: block; white-space: nowrap; padding: .5rem .95rem; border: 1px solid var(--line); border-radius: 99px; text-decoration: none; color: var(--atr-navy); font-weight: 600; font-size: .9rem; background: #fff; }
+.sx-tabs a:hover { border-color: var(--atr-cyan); }
+.sx-tabs a[aria-current="page"] { background: var(--atr-navy); border-color: var(--atr-navy); color: #fff; }
+
+.sx-hero { background: #fff; border-bottom: 1px solid var(--line); }
+.sx-hero .wrap { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(1.5rem, 5vw, 4rem); align-items: center; padding-block: 2rem 3.5rem; }
+.sx-hero h1 { color: var(--atr-navy); font-size: clamp(2.3rem, 5vw, 4rem); }
+.sx-hero p { color: var(--muted); font-size: 1.08rem; }
+.sx-eyebrow { display: flex; align-items: center; gap: .9rem; flex-wrap: wrap; margin: 0 0 1.25rem; font-weight: 600; font-size: .9rem; color: var(--atr-cyan) !important; text-transform: uppercase; letter-spacing: .06em; }
+.sx-eyebrow .sx-brand { height: 40px; width: auto; }
+.sx-eyebrow span { padding-left: .9rem; border-left: 2px solid var(--line); }
+.sx-hero-img { position: relative; max-width: 440px; width: 100%; margin-inline: auto; }
+.sx-hero-img::before { content: ""; position: absolute; inset: 1.1rem -1.1rem -1.1rem 1.1rem; border: 2px solid var(--atr-cyan); border-radius: var(--r-md); }
+.sx-hero-img img { position: relative; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--r-md); background: var(--mist); }
+
+/* Índice de productos: fichas de color */
+.sx-index-sec h2, .sx-list h3, .sx-callout h2, .sx-band h2 { color: var(--atr-navy); }
+.sx-index { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+.sx-index a { display: grid; grid-template-rows: 92px auto auto 1fr; height: 100%; border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; text-decoration: none; background: #fff; transition: transform .15s, box-shadow .15s, border-color .15s; }
+.sx-index a:hover { transform: translateY(-3px); border-color: var(--sw); box-shadow: 0 10px 24px rgba(31,42,90,.1); }
+.sx-swatch { background: var(--sw); position: relative; }
+.sx-swatch::after { content: ""; position: absolute; left: 1.1rem; bottom: -14px; width: 28px; height: 28px; border-radius: 50%; background: #fff; border: 3px solid var(--sw); }
+.sx-idx-name { padding: 1.4rem 1.1rem 0; font: 700 1.2rem/1.2 var(--font-head); color: var(--atr-navy); }
+.sx-idx-sub { padding: .3rem 1.1rem 0; font-size: .9rem; color: var(--muted); }
+.sx-more { align-self: end; padding: .9rem 1.1rem 1rem; font-weight: 600; font-size: .92rem; color: var(--atr-cyan); }
+
+/* Bloque destacado (PLUS) */
+.sx-callout { background: #fff; padding-block: 0 1rem; }
+.sx-callout .wrap { border: 1px solid var(--line); border-left: 5px solid var(--atr-cyan); border-radius: var(--r-md); padding: clamp(1.25rem, 3vw, 2rem); }
+.sx-callout .sx-feat { margin-top: .5rem; }
+
+/* Ficha técnica de cada producto */
+.sx-list .wrap { display: grid; gap: 1.5rem; }
+.sx-prod { scroll-margin-top: 100px; background: #fff; border: 1px solid var(--line); border-top: 6px solid var(--sw); border-radius: var(--r-md); overflow: hidden; }
+.sx-prod-head { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 1rem; padding: 1.3rem 1.5rem; border-bottom: 1px solid var(--line); }
+.sx-dot { width: 44px; height: 44px; border-radius: 50%; background: var(--sw); box-shadow: inset 0 0 0 4px rgba(255,255,255,.55); }
+.sx-prod-head h3 { margin: 0; font-size: 1.45rem; }
+.sx-sub { margin: .15rem 0 0; color: var(--muted); font-size: .98rem; }
+.sx-prod-body { padding: 1.4rem 1.5rem 1.6rem; display: grid; gap: 1.25rem; }
+.sx-ind { margin: 0; max-width: none; }
+.sx-ind strong { color: var(--atr-navy); }
+.sx-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); border-radius: var(--r-sm); overflow: hidden; border: 1px solid var(--line); }
+.sx-stats div { padding: 1rem 1.2rem; background: linear-gradient(90deg, color-mix(in srgb, var(--sw) 14%, #fff), #fff); border-left: 4px solid var(--sw); }
+.sx-stats div + div { border-left: 4px solid var(--atr-cyan); background: #fff; }
+.sx-stats span { display: block; font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.sx-stats strong { display: block; margin-top: .25rem; font: 600 1.12rem/1.35 var(--font-head); color: var(--atr-navy); }
+.sx-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+.sx-cols h4 { font-size: .85rem; text-transform: uppercase; letter-spacing: .06em; color: var(--atr-cyan); margin-bottom: .6rem; }
+.sx-tech { width: 100%; border-collapse: collapse; font-size: .97rem; }
+.sx-tech th, .sx-tech td { text-align: left; vertical-align: top; padding: .55rem 0; border-bottom: 1px solid var(--line); }
+.sx-tech th { width: 40%; padding-right: 1rem; color: var(--atr-navy); font-weight: 600; }
+.sx-tech td { color: var(--text); }
+.sx-feat { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
+.sx-feat li { display: grid; grid-template-columns: 22px 1fr; gap: .5rem; align-items: start; }
+.sx-feat svg { width: 20px; height: 20px; margin-top: 3px; stroke: var(--atr-cyan); fill: none; stroke-width: 2.6; }
+.sx-fig { margin: 0; max-width: 560px; }
+.sx-fig img { border-radius: var(--r-sm); border: 1px solid var(--line); }
+.sx-note { font-size: .9rem; color: var(--muted); margin: 0; }
+
+/* Banda de agujas y siguientes pasos */
+.sx-band { background: #fff; padding-block: 1rem 2rem; }
+.sx-band-in { display: grid; grid-template-columns: 220px 1fr; gap: 2rem; align-items: center; border: 1px solid var(--line); border-radius: var(--r-md); padding: 1.25rem; background: linear-gradient(110deg, #fff 40%, color-mix(in srgb, var(--atr-cyan) 9%, #fff)); }
+.sx-band-in img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: var(--r-sm); }
+.sx-band h2 { font-size: clamp(1.3rem, 2.4vw, 1.8rem); max-width: 30ch; }
+.sx-next { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+.sx-next a { display: grid; gap: .4rem; padding: 1.4rem; border: 1px solid var(--line); border-top: 4px solid var(--atr-navy); border-radius: var(--r-md); text-decoration: none; background: #fff; color: var(--text); }
+.sx-next a:hover { border-top-color: var(--atr-cyan); }
+.sx-next strong { font: 700 1.15rem var(--font-head); color: var(--atr-navy); }
+.sx-next span { color: var(--muted); font-size: .95rem; }
+.sx-next em { font-style: normal; font-weight: 600; color: var(--atr-cyan); margin-top: .3rem; }
+
+@media (max-width: 960px) {
+  .sx-hero .wrap { grid-template-columns: minmax(0, 1fr); }
+  .sx-hero-img { max-width: 340px; }
+}
+@media (max-width: 560px) {
+  .sx-prod-head { grid-template-columns: auto 1fr; }
+  .sx-prod-head .btn { grid-column: 1 / -1; justify-self: start; }
+  .sx-band-in { grid-template-columns: 1fr; }
+  .sx-band-in img { max-width: 200px; }
+}
+.sx-index-sec + .sx-list, .sx-index-sec + .sx-callout { padding-top: 0; }
+.sx-callout + .sx-list { padding-top: 1.5rem; }

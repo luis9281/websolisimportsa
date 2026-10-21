@@ -1,0 +1,10 @@
+---
+# Despliegue en cPanel (Git™ Version Control → Manage → Pull or Deploy → Deploy HEAD Commit).
+# Copia a public_html SOLO los archivos del sitio. scripts/, data/, imagenes-originales/,
+# PRODUCTOS.md y README.md se quedan en el repositorio y no se publican.
+# Nota: copia y reemplaza, pero no borra en public_html lo que se elimine del repo.
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/public_html/
+    - /bin/cp index.html 404.html .htaccess robots.txt sitemap.xml favicon.png apple-touch-icon.png $DEPLOYPATH
+    - /bin/cp -R assets productos project quienes-somos contactenos suturas $DEPLOYPATH

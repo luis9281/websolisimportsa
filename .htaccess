@@ -17,6 +17,7 @@ RedirectMatch 404 ^/(data|scripts|_descargas|imagenes-originales)(/|$)
 
 # Páginas antiguas duplicadas → página actual (ver "redirects" en data/brands.json)
 RedirectMatch 301 ^/project/(tur-gmbh|tur-therapy)/?$ /project/tur/
+RedirectMatch 301 ^/project/pga-rapid/?$ /project/suturas-quirurgicas-absorbibles/
 # Marcas que ya no se distribuyen → catálogo
 RedirectMatch 301 ^/project/magnamed/?$ /productos/
 

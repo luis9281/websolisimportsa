@@ -107,17 +107,30 @@ def svg(name):
 SHIELD = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5L15.5 10"/></svg>'
 
 
-def page(r, *, title, desc, canonical, body, current="", robots="index", og_image=None, ld=(), preload=None):
-    """Documento completo. r = prefijo relativo a la raíz ('', '../', '../../')."""
-    og_image = og_image or BASE + "assets/img/og-default.jpg"
-    home = r or "./"
+def nav_block(r, current=""):
+    """Menú principal (también se copia a quienes-somos/, contactenos/ y 404.html).
+    "Suturas" despliega las líneas de DATA["menu_suturas"]."""
     nav = [("", "Inicio", "inicio"), ("quienes-somos/", "Sobre nosotros", "nosotros"),
            ("productos/", "Productos", "productos"), ("suturas/", "Suturas", "suturas"),
            ("contactenos/", "Contáctenos", "contacto")]
     cur = ' aria-current="page"'
-    nav_html = "\n".join(
-        f'    <li><a href="{r}{href}"{cur if key == current else ""}>{label}</a></li>'
-        for href, label, key in nav)
+    items = []
+    for href, label, key in nav:
+        a = f'<a href="{r}{href}"{cur if key == current else ""}>{label}</a>'
+        if key == "suturas":
+            sub = "".join(
+                f'<li><a href="{r}project/{s}/">{esc(LINE_BY_SLUG[s].get("nav", LINE_BY_SLUG[s]["name"]))}</a></li>'
+                for s in DATA.get("menu_suturas", []) if s in LINE_BY_SLUG)
+            items.append(f'    <li class="has-sub">{a}<ul class="sub" aria-label="Suturas">{sub}</ul></li>')
+        else:
+            items.append(f"    <li>{a}</li>")
+    return '<nav class="nav" aria-label="Principal"><ul>\n' + "\n".join(items) + "\n  </ul></nav>"
+
+
+def page(r, *, title, desc, canonical, body, current="", robots="index", og_image=None, ld=(), preload=None):
+    """Documento completo. r = prefijo relativo a la raíz ('', '../', '../../')."""
+    og_image = og_image or BASE + "assets/img/og-default.jpg"
+    home = r or "./"
     pre = f'\n<link rel="preload" as="image" href="{r}{preload}" type="image/webp">' if preload else ""
     lds = "".join("\n" + jsonld(x) for x in ld)
     return f"""<!doctype html>
@@ -167,9 +180,7 @@ def page(r, *, title, desc, canonical, body, current="", robots="index", og_imag
   <button class="menu-btn" aria-label="Abrir menú" aria-expanded="false" type="button">
     <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
   </button>
-  <nav class="nav" aria-label="Principal"><ul>
-{nav_html}
-  </ul></nav>
+  {nav_block(r, current)}
 </div></header>
 <main id="main">
 {body}
@@ -232,8 +243,7 @@ def card(item, r):
     brand = brand_of(item)
     soon = not item.get("has_content", True)
     text = " ".join(x for x in (item["name"], item.get("area", ""), item.get("tagline", "")) if x)
-    if item is brand:
-        text += " " + " ".join(p["name"] for p in item.get("products", []))
+    text += " " + " ".join(p["name"] for p in item.get("products", []))
     cp = cover_path(item)
     lg = logo_img(brand, r, "", 160, 60)
     if cp:
@@ -389,11 +399,8 @@ def build_home():
 # --------------------------------------------------------------------------- catálogo
 
 def build_suturas():
-    """Sección Suturas (menú principal). Por ahora muestra las líneas de suturas del JSON;
-    el contenido propio de la sección se cargará más adelante."""
+    """Portada de la sección Suturas (menú principal): las líneas de DATA["menu_suturas"]."""
     r = "../"
-    lines = [l for l in LINES if l.get("parent") == "atramat"]
-    cards = "".join(card(l, r) for l in lines)
     atramat = BY_SLUG.get("atramat", {})
     lg = logo_img(atramat, r, "", 220, 80, lazy=False) if atramat else ""
     body = f"""<div class="wrap crumbs"><nav aria-label="Ruta"><ol><li><a href="{r}">Inicio</a></li><li aria-current="page">Suturas</li></ol></nav></div>
@@ -412,8 +419,7 @@ def build_suturas():
 </div></section>
 
 <section class="section"><div class="wrap">
-  <div class="section-head"><h2>Líneas de suturas</h2></div>
-  <div class="grid">{cards}</div>
+  {categories({"lines": DATA.get("menu_suturas", [])}, r, "Líneas de productos")}
 </div></section>"""
     crumbs = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Inicio", "item": BASE},
@@ -505,7 +511,15 @@ def spec(p, item, r):
     return f'<li class="spec"><div><h3>{esc(name)}</h3><p>{esc(p.get("desc", ""))}</p>{chips}</div>{btn}</li>'
 
 
-def categories(brand, r):
+def chip(p, line_slug, r):
+    if p.get("id"):
+        return f'<a class="chip" href="{r}project/{line_slug}/#{p["id"]}">{esc(p["name"])}</a>'
+    if p.get("link"):
+        return f'<a class="chip" href="{r}project/{p["link"]}/">{esc(p["name"])}</a>'
+    return f'<span class="chip">{esc(p["name"])}</span>'
+
+
+def categories(brand, r, title="Categorías de productos"):
     out = []
     for slug in brand.get("lines", []):
         l = LINE_BY_SLUG.get(slug)
@@ -515,16 +529,135 @@ def categories(brand, r):
         img = f'<img src="{r}{cp}" alt="{esc(l["name"])}" width="320" height="400" loading="lazy" onerror="this.remove()">' if cp else ""
         chips = ""
         if l.get("products"):
-            chips = '<div class="chips-row" aria-label="Familias">' + "".join(
-                f'<a class="chip" href="{r}project/{p["link"]}/">{esc(p["name"])}</a>' if p.get("link") else f'<span class="chip">{esc(p["name"])}</span>'
-                for p in l["products"]) + "</div>"
+            chips = '<div class="chips-row" aria-label="Familias">' + "".join(chip(p, slug, r) for p in l["products"]) + "</div>"
         out.append(f'<article class="cat"><div class="cat-img">{mono(l["name"])}{img}</div><div class="cat-body">'
                    f'<h3><a href="{r}project/{slug}/">{esc(l["name"])}</a></h3><p>{esc(l["description"][0])}</p>{chips}'
                    f'<a class="btn ghost sm" href="{r}project/{slug}/">Ver categoría</a></div></article>')
-    return '<h2 id="categorias">Categorías de productos</h2><div class="cats">' + "".join(out) + "</div>" if out else ""
+    return f'<h2 id="categorias">{esc(title)}</h2><div class="cats">' + "".join(out) + "</div>" if out else ""
+
+
+# --------------------------------------------------------------------------- líneas de suturas (estilo Atramat)
+
+CHECK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>'
+
+
+def sx_product(p, line, r):
+    """Ficha técnica de un producto: barra de color, indicación, datos clave, tabla y características."""
+    pid, name = p["id"], p["name"]
+    stats = "".join(f'<div><span>{esc(s["label"])}</span><strong>{esc(s["value"])}</strong></div>' for s in p.get("stats", []))
+    tech = "".join(f"<tr><th scope=\"row\">{esc(k)}</th><td>{esc(v)}</td></tr>" for k, v in p.get("tech", []))
+    feats = "".join(f"<li>{CHECK}{esc(f)}</li>" for f in p.get("features", []))
+    models = "".join(f'<span class="chip">{esc(m)}</span>' for m in p.get("models", []))
+    img = (f'<figure class="sx-fig"><img src="{r}{p["image"]}" alt="{esc(name)}" loading="lazy"></figure>'
+           if p.get("image") and has_file(p["image"]) else "")
+    return f"""<article class="sx-prod" id="{pid}" style="--sw:{p.get('color', '#00a3c4')}">
+  <header class="sx-prod-head">
+    <span class="sx-dot" aria-hidden="true"></span>
+    <div><h3>{esc(name)}</h3>{f'<p class="sx-sub">{esc(p["subtitle"])}</p>' if p.get("subtitle") else ""}</div>
+    <a class="btn ghost sm" href="{wa(f"Hola, quisiera cotizar {name} (Atramat).")}" target="_blank" rel="noopener">Cotizar</a>
+  </header>
+  <div class="sx-prod-body">
+    {f'<p class="sx-ind"><strong>Indicaciones.</strong> {esc(p["indication"])}</p>' if p.get("indication") else ""}
+    {f'<div class="sx-stats">{stats}</div>' if stats else ""}
+    {img}
+    <div class="sx-cols">
+      {f'<div><h4>Información técnica</h4><table class="sx-tech">{tech}</table></div>' if tech else ""}
+      {f'<div><h4>Características</h4><ul class="sx-feat">{feats}</ul></div>' if feats else ""}
+    </div>
+    {f'<div class="chips-row">{models}</div>' if models else ""}
+  </div>
+</article>"""
+
+
+def build_suture_line(item):
+    r = "../../"
+    slug, name = item["slug"], item["name"]
+    brand = brand_of(item)
+    url = f"{BASE}project/{slug}/"
+    prods = item.get("products", [])
+    menu = [s for s in DATA.get("menu_suturas", []) if s in LINE_BY_SLUG]
+    cur = ' aria-current="page"'
+    tabs = "".join(
+        f'<li><a href="{r}project/{s}/"{cur if s == slug else ""}>{esc(LINE_BY_SLUG[s].get("nav", LINE_BY_SLUG[s]["name"]))}</a></li>'
+        for s in menu)
+    cp = cover_path(item)
+    hero_img = f'<img src="{r}{cp}" alt="{esc(name)} Atramat" width="440" height="550">' if cp else logo_img(brand, r, "", 220, 80, lazy=False)
+    index = "".join(
+        f'<li><a href="#{p["id"]}" style="--sw:{p.get("color", "#00a3c4")}"><span class="sx-swatch" aria-hidden="true"></span>'
+        f'<span class="sx-idx-name">{esc(p["name"])}</span><span class="sx-idx-sub">{esc(p.get("subtitle", ""))}</span>'
+        f'<span class="sx-more">Ver ficha</span></a></li>' for p in prods)
+    callout = ""
+    if item.get("callout"):
+        c = item["callout"]
+        callout = (f'<section class="sx-callout"><div class="wrap"><h2>{esc(c["title"])}</h2>'
+                   + "".join(f"<p>{esc(t)}</p>" for t in c.get("text", []))
+                   + ('<ul class="sx-feat">' + "".join(f"<li>{CHECK}<em>{esc(x)}</em></li>" for x in c.get("list", [])) + "</ul>" if c.get("list") else "")
+                   + "</div></section>")
+    needles = ""
+    if slug != "agujas" and "agujas" in LINE_BY_SLUG:
+        ncp = cover_path(LINE_BY_SLUG["agujas"])
+        needles = f"""<section class="sx-band"><div class="wrap sx-band-in">
+  {f'<img src="{r}{ncp}" alt="Agujas quirúrgicas Atramat" width="400" height="500" loading="lazy">' if ncp else ""}
+  <div><p class="sx-eyebrow">Agujas Atramat®</p><h2>La calidad y la tecnología de nuestras agujas son la punta de nuestro proceso de innovación.</h2>
+  <a class="btn" href="{r}project/agujas/">Conocer las agujas</a></div>
+</div></section>"""
+    others = [LINE_BY_SLUG[s] for s in menu if s != slug][:1]
+    nxt = others[0] if others else None
+    body = f"""<div class="wrap crumbs"><nav aria-label="Ruta"><ol><li><a href="{r}">Inicio</a></li><li><a href="{r}suturas/">Suturas</a></li><li aria-current="page">{esc(item.get("nav", name))}</li></ol></nav></div>
+
+<div class="wrap"><ul class="sx-tabs" aria-label="Líneas Atramat">{tabs}</ul></div>
+
+<section class="sx-hero"><div class="wrap">
+  <div>
+    <p class="sx-eyebrow">{logo_img(brand, r, "sx-brand", 130, 50, lazy=False)}<span>Distribuidor autorizado en Panamá</span></p>
+    <h1>{esc(name)}</h1>
+    {"".join(f"<p>{esc(t)}</p>" for t in item.get("description", []))}
+    <div class="actions">
+      <a class="btn wa" href="{wa(f"Hola, quisiera cotizar {name} (Atramat).")}" target="_blank" rel="noopener">Solicitar cotización</a>
+      {'<a class="btn ghost" href="#productos">Ver productos</a>' if len(prods) > 1 else ""}
+    </div>
+  </div>
+  <div class="sx-hero-img">{hero_img}</div>
+</div></section>
+
+{f'<section class="section sx-index-sec" id="productos"><div class="wrap"><h2>Línea {esc(item.get("nav", name))}</h2><ul class="sx-index">{index}</ul></div></section>' if len(prods) > 1 else ""}
+
+{callout}
+
+<section class="section sx-list"><div class="wrap">
+  {"".join(sx_product(p, item, r) for p in prods)}
+  <p class="sx-note">* Para más información, consulta las instrucciones de uso del producto.</p>
+</div></section>
+
+{needles}
+
+<section class="section"><div class="wrap">
+  <div class="section-head"><h2>Siguientes pasos</h2></div>
+  <div class="sx-next">
+    <a href="{r}suturas/"><strong>Más líneas de productos</strong><span>Suturas, mínima invasión, malla, agujas y bonewax de Atramat.</span><em>Ver todas</em></a>
+    {f'<a href="{r}project/{nxt["slug"]}/"><strong>{esc(nxt.get("nav", nxt["name"]))}</strong><span>{esc(nxt.get("tagline", ""))}</span><em>Explorar</em></a>' if nxt else ""}
+    <a href="{r}contactenos/"><strong>Cotiza con Solis Import</strong><span>Indícanos producto, calibre, aguja y cantidad. Respondemos con precio y disponibilidad.</span><em>Contáctanos</em></a>
+  </div>
+</div></section>"""
+    title = f"{name} Atramat en Panamá | Solis Import S.A."
+    desc = item.get("meta") or f"{name} Atramat en Panamá. Solis Import S.A."
+    og = BASE + cp if cp else None
+    ld = [{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "Inicio", "item": BASE},
+              {"@type": "ListItem", "position": 2, "name": "Suturas", "item": BASE + "suturas/"},
+              {"@type": "ListItem", "position": 3, "name": item.get("nav", name), "item": url}]},
+          {"@context": "https://schema.org", "@type": "ItemList", "itemListElement": [
+              {"@type": "ListItem", "position": i + 1, "item": {
+                  "@type": "Product", "name": f"Atramat {p['name']}",
+                  "description": p.get("indication") or p.get("subtitle", ""),
+                  "brand": {"@type": "Brand", "name": "Atramat"}, **({"image": og} if og else {})}}
+              for i, p in enumerate(prods)]}]
+    return page(r, title=title, desc=desc, canonical=url, body=body, current="suturas", og_image=og, ld=ld)
 
 
 def build_item(item):
+    if item.get("template") == "suturas":
+        return build_suture_line(item)
     r = "../../"
     slug, name = item["slug"], item["name"]
     brand = brand_of(item)
@@ -679,9 +812,30 @@ def check():
     return warns
 
 
+# Páginas fijas (se editan a mano): build.py solo les actualiza el menú principal
+STATIC_NAV = [("quienes-somos/index.html", "../", "nosotros"), ("contactenos/index.html", "../", "contacto"),
+              ("404.html", "/", "")]
+
+
+def sync_static_nav():
+    import re
+    done = []
+    for rel, r, current in STATIC_NAV:
+        p = ROOT / rel
+        if not p.is_file():
+            continue
+        text = p.read_text(encoding="utf-8")
+        new, n = re.subn(r'<nav class="nav" aria-label="Principal">.*?</ul></nav>', lambda m: nav_block(r, current), text, count=1, flags=re.S)
+        if n and new != text:
+            p.write_text(new, encoding="utf-8", newline="\n")
+            done.append(rel)
+    return done
+
+
 def main():
     out = [write("index.html", build_home()), write("productos/index.html", build_catalog()),
            write("suturas/index.html", build_suturas())]
+    out += sync_static_nav()
     items = BRANDS + LINES
     for i in items:
         out.append(write(f"project/{i['slug']}/index.html", build_item(i)))
