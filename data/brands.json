@@ -1,0 +1,1089 @@
+{
+  "site": {
+    "name": "Solis Import S.A.",
+    "url": "https://www.solisimportsa.com",
+    "whatsapp": "50768629425",
+    "email": "mercadeo@solisimportsa.com",
+    "phone_main": "+507 6862-9425",
+    "phones_office": "(507) 271-5709 / 10 / 11",
+    "address_panama": "Parque Lefevre, Panamá Viejo Business Center, local G-9, Ciudad de Panamá",
+    "postal": "Apartado Postal 0819-05563",
+    "address_chitre": "Ave. Centenario, Chitré (junto a Taxi Parque Herrera), Provincia de Herrera",
+    "phone_chitre": "(507) 996-8510",
+    "instagram": "https://www.instagram.com/solisimportpty/",
+    "youtube": "https://www.youtube.com/channel/UCKMJDKvSs_jmxsT6_A6jBog",
+    "linkedin": "https://www.linkedin.com/company/solis-import-s-a/",
+    "lastmod": "2026-10-21"
+  },
+  "brands": [
+    {
+      "slug": "atramat",
+      "name": "Atramat",
+      "area": "Suturas quirúrgicas",
+      "tagline": "Suturas quirúrgicas de alto reconocimiento mundial",
+      "meta": "Atramat en Panamá: suturas quirúrgicas absorbibles, no absorbibles y antibacterianas PLUS. Distribuidor autorizado Solis Import S.A.",
+      "has_content": true,
+      "cover": "atramat",
+      "logo": "atramat.png",
+      "website": "https://www.atramat.com/",
+      "description": [
+        "Atramat® produce material quirúrgico de alta calidad para miles de cirujanos y millones de pacientes. Es uno de los mayores proveedores de suturas del mundo y vende a más de 80 países a través de una red global de socios comerciales.",
+        "Su gama Premium de materiales y agujas está pensada para las especialidades y los cirujanos más exigentes. Solis Import S.A. es su distribuidor autorizado en Panamá."
+      ],
+      "highlights": [
+        {
+          "value": "80+",
+          "label": "países atendidos por Atramat"
+        },
+        {
+          "value": "3",
+          "label": "categorías: absorbibles, no absorbibles y PLUS"
+        },
+        {
+          "value": "8",
+          "label": "familias de suturas absorbibles"
+        }
+      ],
+      "products": [],
+      "lines": [
+        "suturas-quirurgicas-absorbibles",
+        "suturas-quirurgicas-no-absorbibles",
+        "suturas-quirurgicas-plus-antibacterianas"
+      ]
+    },
+    {
+      "slug": "ferno",
+      "name": "Ferno",
+      "area": "Atención de emergencias",
+      "tagline": "Equipo para atención de emergencias y trauma",
+      "meta": "Ferno en Panamá: maletines de trauma y ALS, tablas espinales y camillas para emergencias. Distribuidor autorizado Solis Import S.A.",
+      "has_content": true,
+      "cover": "ferno",
+      "logo": "ferno.svg",
+      "website": "https://www.ferno.com/",
+      "description": [
+        "Ferno es un fabricante mundial de equipo para la atención de emergencias. Solis Import S.A. es su distribuidor autorizado en Panamá."
+      ],
+      "highlights": [
+        {
+          "value": "700 lb",
+          "label": "capacidad de la camilla 35-X PROFlexx en transporte"
+        },
+        {
+          "value": "De por vida",
+          "label": "garantía limitada en maletines 5107 y 5108"
+        }
+      ],
+      "products": [
+        {
+          "name": "Maletín de trauma profesional, modelo 5107",
+          "desc": "Tela Cordura, cierres YKK, espuma de doble densidad, correas ocultas para el hombro, etiquetas reflectivas y base reemplazable. Garantía limitada de por vida."
+        },
+        {
+          "name": "Maletín ALS profesional, modelo 5108",
+          "desc": "Misma construcción que el 5107, con cuatro minibolsos para medicamentos, intubación y dos de suministros IV, e inserciones removibles para armarlo a su medida."
+        },
+        {
+          "name": "Tabla espinal NAJO RediHold",
+          "desc": "Polietileno de alta densidad de una sola pieza. Flota, es radiolúcida, resiste los fluidos corporales y se descontamina con facilidad. Tiene asas en el extremo cónico."
+        },
+        {
+          "name": "Camilla 35-X PROFlexx",
+          "desc": "Soporta 700 lb en posición de transporte y 1,100 lb en la posición más baja. Su pata delantera fija, más larga, le da estabilidad."
+        }
+      ]
+    },
+    {
+      "slug": "ritter",
+      "name": "Ritter",
+      "area": "Odontología",
+      "tagline": "Equipamiento dental alemán con más de un siglo de historia",
+      "meta": "Ritter en Panamá: equipos dentales y autoclave Cleantec CB23. Distribuidor autorizado Solis Import S.A.",
+      "has_content": true,
+      "cover": "ritter",
+      "logo": "ritter.png",
+      "website": "https://ritterconcept.com/",
+      "description": [
+        "Ritter presentó en 1912 el panel de control para instrumental dental y en 1917 el sistema de tratamiento integrado. Hoy se reconoce por su innovación, la calidad de sus productos y su diseño práctico.",
+        "Trabaja con universidades y líderes de la industria, y fabrica en Biberach an der Riss, Alemania."
+      ],
+      "highlights": [
+        {
+          "value": "1912",
+          "label": "pionero del panel de control dental"
+        },
+        {
+          "value": "23 L",
+          "label": "cámara del autoclave Cleantec CB23"
+        },
+        {
+          "value": "135 °C",
+          "label": "programa adicional para priones"
+        }
+      ],
+      "products": [
+        {
+          "name": "Autoclave Cleantec CB23",
+          "desc": "Cámara de 23 litros con conexión opcional a agua de red y drenaje. Impresora interna para documentar cada ciclo, programas adicionales (incluido uno a 135 °C para priones), pantalla LCD multilenguaje y protección con contraseña. Medidas: 647 x 497 x 430 mm.",
+          "datasheet": true
+        }
+      ]
+    },
+    {
+      "slug": "pegamedical",
+      "name": "Pega Medical",
+      "area": "Ortopedia pediátrica",
+      "tagline": "Implantes ortopédicos especializados para niños",
+      "meta": "Pega Medical en Panamá: implantes ortopédicos pediátricos Fassier-Duval, Slim, SCFE, Hinge plate y Gap nail. Solis Import S.A.",
+      "has_content": true,
+      "cover": "pegamedical",
+      "logo": "pegamedical.png",
+      "website": "https://www.pegamedical.com/",
+      "description": [
+        "Pega Medical diseña, desarrolla, evalúa y fabrica dispositivos médicos pensados para el cirujano. Su equipo de ingeniería trabaja con modelado 3D, análisis de elementos finitos y pruebas estáticas y de fatiga.",
+        "Desde hace dos décadas se concentra en la ortopedia pediátrica. Se presenta como la primera empresa de dispositivos médicos dedicada por completo a implantes ortopédicos especializados para niños, porque los problemas óseos de la infancia que no se tratan pueden derivar en problemas ortopédicos en la adultez."
+      ],
+      "highlights": [
+        {
+          "value": "20 años",
+          "label": "enfocados en ortopedia pediátrica"
+        },
+        {
+          "value": "5",
+          "label": "catálogos de producto disponibles"
+        }
+      ],
+      "products": [
+        {
+          "name": "Fassier-Duval",
+          "desc": "Catálogo disponible bajo solicitud.",
+          "datasheet": true
+        },
+        {
+          "name": "Slim",
+          "desc": "Catálogo disponible bajo solicitud.",
+          "datasheet": true
+        },
+        {
+          "name": "Free-gliding (SCFE)",
+          "desc": "Catálogo disponible bajo solicitud.",
+          "datasheet": true
+        },
+        {
+          "name": "Hinge plate",
+          "desc": "Catálogo disponible bajo solicitud.",
+          "datasheet": true
+        },
+        {
+          "name": "Gap nail",
+          "desc": "Catálogo disponible bajo solicitud.",
+          "datasheet": true
+        }
+      ]
+    },
+    {
+      "slug": "myray",
+      "name": "MyRay",
+      "area": "Radiología dental",
+      "tagline": "Ortopantomógrafos y sistemas radiográficos de vanguardia",
+      "meta": "MyRay en Panamá: Hyperion X9 Pro, Hyperion X5, RXDC, Hy-Scan y ZEN-X para radiología e imagen dental digital. Solis Import S.A.",
+      "has_content": true,
+      "cover": "myray",
+      "logo": "myray.png",
+      "website": "https://www.myray.it/",
+      "description": [
+        "MyRay es la marca de radiología dental e imagen digital dentro del negocio de equipamiento médico de Cefla. Solis Import S.A. es su distribuidor autorizado en Panamá."
+      ],
+      "highlights": [
+        {
+          "value": "3 en 1",
+          "label": "Hyperion X9 Pro: 3D, cefalométrico y 2D"
+        },
+        {
+          "value": "80 μm",
+          "label": "resolución 3D del Hyperion X5"
+        },
+        {
+          "value": "IP67",
+          "label": "resistencia del sensor ZEN-X"
+        }
+      ],
+      "products": [
+        {
+          "name": "Hyperion X9 Pro",
+          "desc": "Sistema híbrido modular 3 en 1 para exámenes 3D, cefalométricos y 2D. Brazo cefalométrico reversible y diseño actualizable."
+        },
+        {
+          "name": "Hyperion X5",
+          "desc": "Sistema compacto suspendido 3D/2D con opción cefalométrica. Panorámica sin enfoque manual gracias a la tecnología de reconocimiento de morfología y 3D de alta resolución a 80 μm."
+        },
+        {
+          "name": "RXDC",
+          "desc": "Cabezal de rayos X que se mueve libremente alrededor de una esfera, con bloqueo táctil para reposicionarlo entre exposiciones."
+        },
+        {
+          "name": "Hy-Scan",
+          "desc": "Escáner compacto de placas de fósforo para imagen intraoral. Se instala sobre la mesa o en la pared."
+        },
+        {
+          "name": "ZEN-X",
+          "desc": "Sensor intraoral digital HD en dos tamaños. Imagen en tiempo real por USB plug and play, cable flexible y resistencia IP67 al polvo y a los líquidos."
+        }
+      ]
+    },
+    {
+      "slug": "fanem",
+      "name": "Fanem",
+      "area": "Neonatología y hospitalario",
+      "tagline": "Equipos neonatales, de laboratorio y hospitalarios",
+      "meta": "Fanem en Panamá: incubadoras neonatales y de transporte, cunas calientes y equipos de laboratorio. Distribuidor autorizado Solis Import S.A.",
+      "has_content": true,
+      "cover": "fanem",
+      "logo": "fanem.png",
+      "website": "https://fanem.com.br/",
+      "description": [
+        "Fanem fabrica equipos de laboratorio, neonatales y hospitalarios: camas, cunas e incubadoras de transporte.",
+        "Fue la primera empresa brasileña en certificar productos electromédicos con el sistema Inmetro-Anvisa y hoy reúne la mayor cantidad de certificados de equipos electromédicos y de sistema de calidad del sector salud brasileño. Trabaja hacia el cumplimiento de UL, FDA y RoHS."
+      ],
+      "highlights": [
+        {
+          "value": "IEC 60601-1",
+          "label": "tercera edición en la incubadora IT 158"
+        }
+      ],
+      "products": [
+        {
+          "name": "Cuna caliente Ampla 2085 LED",
+          "desc": "Cuna de calor radiante para el cuidado del recién nacido."
+        },
+        {
+          "name": "Incubadora Vision Advanced 2286",
+          "desc": "Incubadora para cuidados intensivos neonatales con balanza integrada, oxímetro de pulso, control de humedad y servocontrol de O₂."
+        },
+        {
+          "name": "Incubadora de transporte IT 158",
+          "desc": "Incubadora para traslado de recién nacidos, actualizada a la tercera edición de la norma IEC 60601-1."
+        },
+        {
+          "name": "Babypuff 1020 integrado",
+          "desc": "Consulta por ficha técnica y disponibilidad."
+        }
+      ]
+    },
+    {
+      "slug": "novaerus",
+      "name": "Novaerus",
+      "area": "Desinfección de aire",
+      "tagline": "Tecnología de desinfección del aire, eficaz y segura",
+      "meta": "Novaerus en Panamá: purificación y desinfección de aire DEFEND I050, PROTECT 900 y PROTECT 200. Solis Import S.A.",
+      "has_content": true,
+      "cover": "novaerus",
+      "logo": "novaerus.png",
+      "website": "https://www.wellairsolutions.com/novaerus",
+      "description": [
+        "Un protocolo de higiene completo cubre manos, superficies y aire. Novaerus propone una tecnología de desinfección del aire eficaz, segura, fácil de usar y accesible.",
+        "Se fabrica en Irlanda y está instalada en más de 30 países. El fabricante cita unos 4,5 millones de infecciones asociadas a la atención hospitalaria por año solo en Europa."
+      ],
+      "highlights": [
+        {
+          "value": "30+",
+          "label": "países con equipos instalados"
+        },
+        {
+          "value": "Irlanda",
+          "label": "país de fabricación"
+        }
+      ],
+      "products": [
+        {
+          "name": "DEFEND I050",
+          "desc": "Consulta por especificaciones y disponibilidad."
+        },
+        {
+          "name": "PROTECT 900",
+          "desc": "Consulta por especificaciones y disponibilidad."
+        },
+        {
+          "name": "PROTECT 200",
+          "desc": "Consulta por especificaciones y disponibilidad."
+        }
+      ]
+    },
+    {
+      "slug": "surgiseal",
+      "name": "SurgiSeal",
+      "area": "Cierre de heridas",
+      "tagline": "Adhesivo tópico para la piel con aplicador tipo lápiz",
+      "meta": "SurgiSeal Stylus en Panamá: adhesivo tópico de 2-octil cianoacrilato con aplicador ergonómico. Solis Import S.A.",
+      "has_content": true,
+      "cover": "surgiseal",
+      "logo": "surgiseal.png",
+      "website": "https://medical.hbfuller.com/en/products/surgiseal",
+      "description": [
+        "SurgiSeal Stylus es un adhesivo tópico para la piel con un aplicador de diseño ergonómico, tipo lápiz, y punta angulada para una aplicación controlada.",
+        "Las comparaciones de abajo provienen de pruebas in vitro e internas del fabricante."
+      ],
+      "highlights": [
+        {
+          "value": "29,7 pulg²",
+          "label": "cobertura de un aplicador de 0,5 ml"
+        },
+        {
+          "value": "Ducha",
+          "label": "resistente al agua, el paciente puede ducharse tras la cirugía"
+        }
+      ],
+      "products": [
+        {
+          "name": "Fórmula de 2-octil cianoacrilato",
+          "desc": "Fórmula propia, más flexible que los productos de n-butil cianoacrilato (BCA) por su cadena alquílica más larga."
+        },
+        {
+          "name": "Tecnología OctylFlex®",
+          "desc": "Aporta flexibilidad, ayuda a mantener la integridad del adhesivo y evita que se desprenda antes de tiempo."
+        },
+        {
+          "name": "Barrera microbiana",
+          "desc": "Reduce el riesgo de infección y resiste el agua."
+        },
+        {
+          "name": "Resistencia y tiempo de fraguado",
+          "desc": "En las pruebas del fabricante mostró la mayor resistencia promedio al cierre de la herida y el fraguado más rápido entre tres competidores."
+        }
+      ],
+      "logo_wall": false
+    },
+    {
+      "slug": "brix3000",
+      "name": "Brix3000",
+      "area": "Odontología",
+      "tagline": "Gel enzimático para remoción atraumática de caries",
+      "meta": "Brix3000 en Panamá: gel de papaína para remoción atraumática de caries sin fresado. Solis Import S.A.",
+      "has_content": true,
+      "cover": "brix3000",
+      "logo": "brix3000.png",
+      "website": "https://brix3000.com.br/",
+      "description": [
+        "Brix3000 es un gel dental para remover caries sin fresar. Su principio activo es la papaína, una enzima proteolítica con actividad de 3.000 U/mg.",
+        "La papaína se bioencapsula con la tecnología propia EBE (Emulsión Buffer Encapsulante), que la estabiliza."
+      ],
+      "highlights": [
+        {
+          "value": "3.000 U/mg",
+          "label": "actividad enzimática de la papaína"
+        },
+        {
+          "value": "Sin refrigeración",
+          "label": "estable a temperatura ambiente"
+        }
+      ],
+      "products": [
+        {
+          "name": "Mayor eficacia sobre el tejido cariado",
+          "desc": "Según el fabricante, degrada mejor las fibras de colágeno del tejido con caries y se disuelve menos con los fluidos orales."
+        },
+        {
+          "name": "Acción antibacteriana y antifúngica",
+          "desc": "Según el fabricante, su actividad antibacteriana y antifúngica es mayor."
+        },
+        {
+          "name": "Seguridad",
+          "desc": "El fabricante indica que los excipientes están autorizados por ANMAT y que existen certificados dermatológicos de que no es tóxico en boca, piel ni ojos."
+        }
+      ]
+    },
+    {
+      "slug": "sunset",
+      "name": "Sunset Healthcare",
+      "area": "Insumos respiratorios y cuidado de heridas",
+      "tagline": "Insumos respiratorios para hospitales y atención domiciliaria",
+      "meta": "Sunset Healthcare en Panamá: insumos para CPAP, oxigenoterapia, ventilación, nebulización y apósitos para heridas. Solis Import S.A.",
+      "has_content": true,
+      "logo": "sunset.svg",
+      "website": "https://sunsethcs.com/",
+      "description": [
+        "Sunset Healthcare Solutions es un fabricante y distribuidor estadounidense, con sede en Chicago, especializado en insumos respiratorios para hospitales y atención domiciliaria.",
+        "Su catálogo cubre CPAP y ventilación no invasiva, oxigenoterapia, nebulización, traqueostomía y succión, y desde 2023 incluye una línea de apósitos para el cuidado de heridas."
+      ],
+      "highlights": [
+        {
+          "value": "Chicago",
+          "label": "sede del fabricante en Estados Unidos"
+        },
+        {
+          "value": "2023",
+          "label": "año en que sumó su línea de cuidado de heridas"
+        }
+      ],
+      "products": [
+        {
+          "name": "CPAP y ventilación no invasiva",
+          "desc": "Mangueras, filtros, arneses, mentoneras, mascarillas y liners para mascarillas CPAP/VNI.",
+          "models": [
+            "Silent Night",
+            "AIRO"
+          ]
+        },
+        {
+          "name": "Oxigenoterapia",
+          "desc": "Cánulas, mascarillas, tubería, conectores, filtros bacterianos y HEPA para concentradores, y portacilindros."
+        },
+        {
+          "name": "Circuitos y filtros para ventiladores",
+          "desc": "Circuitos de ventilador y filtros bacterianos compatibles, como los modelos para ventiladores Ventec VOCSN.",
+          "models": [
+            "VF015-10",
+            "VF016-10"
+          ]
+        },
+        {
+          "name": "Nebulización, traqueostomía y succión",
+          "desc": "Insumos desechables para terapia respiratoria en hospital y en casa."
+        },
+        {
+          "name": "Repuestos para concentradores",
+          "desc": "Partes de reparación y cables de poder para concentradores portátiles como SimplyGo Mini y Rhythm P2."
+        },
+        {
+          "name": "Cuidado de heridas",
+          "desc": "Apósitos de espuma, compuestos, hidrocoloides, de alginato, de colágeno y con plata."
+        }
+      ]
+    },
+    {
+      "slug": "digitsole",
+      "name": "Digitsole",
+      "area": "Análisis de la marcha",
+      "tagline": "Análisis clínico de la marcha y la carrera con plantillas conectadas",
+      "meta": "Digitsole Pro en Panamá: análisis biomecánico de la marcha, la carrera y el salto con plantillas conectadas e IA. Solis Import S.A.",
+      "has_content": true,
+      "logo": "digitsole.png",
+      "website": "https://www.digitsole.com/",
+      "description": [
+        "Digitsole Pro es un sistema de análisis musculoesquelético con inteligencia artificial. Con plantillas conectadas y una aplicación, registra datos biomecánicos objetivos al caminar, correr y saltar, directamente en la consulta.",
+        "Está pensado para podólogos, fisioterapeutas y médicos que necesitan medir, explicar y dar seguimiento a la evolución de cada paciente. Es un dispositivo médico certificado (CE)."
+      ],
+      "highlights": [
+        {
+          "value": "700+",
+          "label": "profesionales de la salud lo usan a diario"
+        },
+        {
+          "value": "3",
+          "label": "estudios de validación clínica publicados"
+        }
+      ],
+      "products": [
+        {
+          "name": "Kit clínico Digitsole Pro",
+          "desc": "Incluye 6 pares de plantillas, 2 chips conectados y cargador."
+        },
+        {
+          "name": "Aplicación de análisis",
+          "desc": "Análisis de la marcha y la carrera con datos objetivos y seguimiento del paciente en el tiempo."
+        },
+        {
+          "name": "Módulo Performance Rehab",
+          "desc": "Evaluación del salto para rehabilitación y medicina deportiva."
+        },
+        {
+          "name": "Informe para el paciente",
+          "desc": "Fichas con interpretación personalizada y comparación entre sesiones para explicar los resultados."
+        }
+      ]
+    },
+    {
+      "slug": "lasotronix",
+      "name": "Lasotronix",
+      "area": "Láseres dentales y médicos",
+      "tagline": "Láseres de diodo para odontología y cirugía",
+      "meta": "Lasotronix en Panamá: láseres SMART M para odontología, cirugía, flebología, proctología y dermatología. Solis Import S.A.",
+      "has_content": true,
+      "logo": "lasotronix.png",
+      "website": "https://lasotronix.com/en/",
+      "description": [
+        "Lasotronix es un fabricante polaco, con sede en Piaseczno, con más de 20 años de experiencia en tecnología láser para aplicaciones médicas y dentales.",
+        "Su plataforma SMART M se usa en odontología, cirugía, neurocirugía, dermatología, flebología y proctología. Incluye una base de procedimientos preprogramados que se puede modificar y asignar a cada paciente."
+      ],
+      "highlights": [
+        {
+          "value": "20+",
+          "label": "años de experiencia en tecnología láser"
+        },
+        {
+          "value": "6",
+          "label": "especialidades: odontología, cirugía, neurocirugía, dermatología, flebología y proctología"
+        }
+      ],
+      "products": [
+        {
+          "name": "SMART M Odontología",
+          "desc": "Láser para periodoncia, endodoncia, cirugía de tejidos blandos, desinfección fotoactivada (PAD) y terapia. Procedimientos más precisos y menos invasivos, con menos dolor para el paciente.",
+          "models": [
+            "ST-1",
+            "ST-2",
+            "ST-3"
+          ]
+        },
+        {
+          "name": "Modelo ST-1",
+          "desc": "Longitudes de onda de 980 nm y 1064 nm, con opciones de 405, 635 y 808 nm."
+        },
+        {
+          "name": "Modelo ST-2",
+          "desc": "Longitud de onda de 980 nm con guía de 635 nm."
+        },
+        {
+          "name": "SMART M Cirugía",
+          "desc": "Aplicaciones en cirugía general, flebología (cirugía vascular) y proctología."
+        },
+        {
+          "name": "SMART M Neurocirugía",
+          "desc": "Configuración del láser SMART M para procedimientos neuroquirúrgicos."
+        }
+      ]
+    },
+    {
+      "slug": "hb-fuller",
+      "name": "H.B. Fuller",
+      "area": "Adhesivos médicos",
+      "tagline": "Adhesivos médicos y quirúrgicos para el cierre de heridas y el acceso vascular",
+      "meta": "H.B. Fuller Medical Adhesive Technologies en Panamá: Glubran 2, FloraSeal, SecurePortIV y SurgiSeal. Solis Import S.A.",
+      "has_content": true,
+      "logo": "hb-fuller.svg",
+      "website": "https://medical.hbfuller.com/",
+      "description": [
+        "H.B. Fuller Medical Adhesive Technologies desarrolla adhesivos para profesionales de la salud y para fabricantes de dispositivos médicos: cierre de heridas, adhesivos quirúrgicos, acceso vascular, embolización líquida, sellantes preoperatorios y prevención de infecciones.",
+        "Es el fabricante de SurgiSeal®, el adhesivo tópico para piel que también distribuimos en Panamá."
+      ],
+      "highlights": [
+        {
+          "value": "6",
+          "label": "campos clínicos, del cierre de heridas a la embolización líquida"
+        }
+      ],
+      "products": [
+        {
+          "name": "Glubran®2",
+          "desc": "Pegamento quirúrgico.",
+          "models": [
+            "0.25 ml",
+            "0.5 ml",
+            "1 ml"
+          ]
+        },
+        {
+          "name": "FloraSeal®",
+          "desc": "Sellante microbiano para la preparación preoperatoria de la piel.",
+          "models": [
+            "FS-250D"
+          ]
+        },
+        {
+          "name": "SecurePortIV®",
+          "desc": "Adhesivo para la fijación de catéteres en el acceso vascular.",
+          "models": [
+            "SP-015V50"
+          ]
+        },
+        {
+          "name": "SurgiSeal®",
+          "desc": "Adhesivo tópico para piel de 2-octil cianoacrilato.",
+          "link": "surgiseal"
+        }
+      ]
+    },
+    {
+      "slug": "tur",
+      "name": "TUR",
+      "area": "Rehabilitación y fisioterapia",
+      "tagline": "Tecnología alemana para fisioterapia y rehabilitación desde 1904",
+      "meta": "TUR en Panamá: ondas de choque kimatur, electroterapia y ultrasonido, isocinética isoforce, crioterapia y onda corta. Solis Import S.A.",
+      "has_content": true,
+      "logo": "tur.png",
+      "website": "https://www.tur-web.com/",
+      "description": [
+        "TUR es un fabricante alemán que desde 1904 desarrolla equipos para fisioterapia y rehabilitación. Más de 3,000 profesionales en el mundo trabajan con sus equipos.",
+        "Su portafolio cubre ondas de choque, electroterapia y ultrasonido, isocinética, crioterapia, onda corta y estaciones de trabajo modulares para clínicas."
+      ],
+      "highlights": [
+        {
+          "value": "1904",
+          "label": "desarrollando equipos de terapia física"
+        },
+        {
+          "value": "3,000+",
+          "label": "profesionales en el mundo usan sus equipos"
+        }
+      ],
+      "products": [
+        {
+          "name": "kimatur · Ondas de choque",
+          "desc": "Equipos de terapia por ondas de choque; los cabezales se usan uno tras otro sin detener el equipo.",
+          "models": [
+            "kimatur PRIME",
+            "kimatur DUO",
+            "kimatur GO",
+            "kimatur DOUBLE"
+          ]
+        },
+        {
+          "name": "Electroterapia y ultrasonido",
+          "desc": "Equipos de electroterapia y ultrasonido, con pruebas de corriente galvánica y de media frecuencia.",
+          "models": [
+            "curatur",
+            "sonotur",
+            "sonotur lite",
+            "stimutur"
+          ]
+        },
+        {
+          "name": "isoforce · Isocinética",
+          "desc": "Sistema de rehabilitación y evaluación para más de 20 patrones de movimiento articular."
+        },
+        {
+          "name": "cryotur Stream · Crioterapia",
+          "desc": "Crioterapia por flujo de aire frío, sin contacto con la piel."
+        },
+        {
+          "name": "thermatur · Onda corta",
+          "desc": "Calor profundo mediante corrientes de alta frecuencia.",
+          "models": [
+            "thermatur 200+",
+            "thermatur m250+"
+          ]
+        },
+        {
+          "name": "physiotur perfect",
+          "desc": "Estación de trabajo modular y móvil para clínicas y consultorios de fisioterapia."
+        }
+      ]
+    },
+    {
+      "slug": "vcomin",
+      "name": "Vcomin",
+      "area": "Doppler fetal y oximetría",
+      "tagline": "Dopplers fetales y vasculares, oxímetros de pulso y equipo veterinario",
+      "meta": "Vcomin en Panamá: dopplers fetales FD-800 y FD-590, dopplers vasculares VD-300 y oxímetros PO-50. Solis Import S.A.",
+      "has_content": true,
+      "logo": "vcomin.png",
+      "website": "https://en.vcomin.com/",
+      "description": [
+        "Vcomin Technology Limited, fundada en 2009 en Shenzhen (China), diseña y fabrica equipo médico bajo un sistema de gestión de calidad ISO 13485.",
+        "Sus dopplers fetales, dopplers vasculares, electrocardiógrafos, oxímetros de pulso y termómetros infrarrojos se venden en más de 70 países."
+      ],
+      "highlights": [
+        {
+          "value": "2009",
+          "label": "año de fundación"
+        },
+        {
+          "value": "70+",
+          "label": "países donde se venden sus equipos"
+        },
+        {
+          "value": "ISO 13485",
+          "label": "sistema de gestión de calidad"
+        }
+      ],
+      "products": [
+        {
+          "name": "Doppler fetal de mesa FD-800",
+          "desc": "Monitoreo de la frecuencia cardiaca fetal para consultorio.",
+          "models": [
+            "FD-800T",
+            "FD-800P",
+            "FD-800D",
+            "FD-800C"
+          ]
+        },
+        {
+          "name": "Doppler fetal de mano FD-590",
+          "desc": "Doppler fetal portátil.",
+          "models": [
+            "FD-590B",
+            "FD-590C",
+            "FD-590D",
+            "FD-590G"
+          ]
+        },
+        {
+          "name": "Doppler vascular VD-300",
+          "desc": "Evaluación del flujo sanguíneo periférico.",
+          "models": [
+            "VD-310",
+            "VD-320",
+            "VD-330"
+          ]
+        },
+        {
+          "name": "Oxímetro de pulso PO-50",
+          "desc": "Medición de saturación de oxígeno (SpO₂) y pulso.",
+          "models": [
+            "PO-50C",
+            "PO-50D"
+          ]
+        },
+        {
+          "name": "Línea veterinaria",
+          "desc": "Doppler vascular y sistema de presión arterial para uso veterinario.",
+          "models": [
+            "VVD-320",
+            "DBP-3000D"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "trulife",
+      "name": "Trulife",
+      "area": "Ortesis, prótesis y cuidado de presión",
+      "tagline": "Ortesis, prótesis, cuidado de presión y prótesis mamarias",
+      "meta": "Trulife en Panamá: ortesis, componentes de prótesis, cuidado de presión, prótesis mamarias y ayudas para caminar. Solis Import S.A.",
+      "has_content": true,
+      "logo": "trulife.svg",
+      "website": "https://trulife.com/",
+      "description": [
+        "Trulife diseña y fabrica dispositivos médicos, con sedes en Irlanda, Reino Unido, Canadá y Estados Unidos. Llega a más de 100 países a través de más de 300 distribuidores.",
+        "Su portafolio incluye ortesis, componentes de prótesis de miembro inferior, soluciones de cuidado de presión para quirófano y sedestación, prótesis mamarias y ayudas para caminar."
+      ],
+      "highlights": [
+        {
+          "value": "100+",
+          "label": "países"
+        },
+        {
+          "value": "300+",
+          "label": "distribuidores en el mundo"
+        }
+      ],
+      "products": [
+        {
+          "name": "Ortesis",
+          "desc": "Soportes para miembro inferior, espalda y tronco, cabeza y cuello, y miembro superior, incluidas las AFO de fibra de carbono.",
+          "models": [
+            "Pace",
+            "A-Pace"
+          ]
+        },
+        {
+          "name": "Pectus Pro-S",
+          "desc": "Ortesis torácica para pectus carinatum, para pacientes con contorno de pecho de 63 a 102 cm."
+        },
+        {
+          "name": "Prótesis de miembro inferior",
+          "desc": "Pies, rodillas y adaptadores modulares, como el sistema de tobillo y pie Seattle Skride (K3/K4).",
+          "models": [
+            "Seattle Skride",
+            "AAA Modular"
+          ]
+        },
+        {
+          "name": "PressureCare",
+          "desc": "Superficies para quirófano y sedestación que ayudan a prevenir lesiones por presión."
+        },
+        {
+          "name": "Breastcare",
+          "desc": "Prótesis mamarias estándar y a medida, sostenes posmastectomía y prendas para linfedema.",
+          "models": [
+            "Radiant Impressions"
+          ]
+        },
+        {
+          "name": "Ayudas para caminar",
+          "desc": "Muletas, andaderas, bastones, trípodes y tetrápodos.",
+          "models": [
+            "Combi"
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "mir",
+      "name": "MIR",
+      "area": "Espirometría y oximetría",
+      "tagline": "Espirómetros y oxímetros italianos desde 1993",
+      "meta": "MIR en Panamá: espirómetros Spirolab, Spirodoc, Spirobank y Minispir, oxímetros y ECG Cardionica. Solis Import S.A.",
+      "has_content": true,
+      "logo": "mir.svg",
+      "website": "https://spirometry.com/en/",
+      "description": [
+        "MIR (Medical International Research) es un fabricante italiano con sede en Roma que desde 1993 se especializa en espirometría, oximetría y tecnología médica, con oficinas en Italia, Estados Unidos, Francia y Brasil.",
+        "Sus equipos se venden en más de 100 países y cuentan con aprobaciones como FDA, ANVISA, COFEPRIS y Health Canada."
+      ],
+      "highlights": [
+        {
+          "value": "1993",
+          "label": "especialistas en espirometría y oximetría"
+        },
+        {
+          "value": "100+",
+          "label": "países"
+        }
+      ],
+      "products": [
+        {
+          "name": "Spirolab",
+          "desc": "Espirómetro de escritorio todo en uno. La versión ESI ayuda a detectar enfisema por espirometría.",
+          "models": [
+            "Spirolab",
+            "Spirolab Plus",
+            "Spirolab Plus ESI"
+          ]
+        },
+        {
+          "name": "Spirodoc",
+          "desc": "Espirómetro con pantalla táctil y oxímetro 3D opcional."
+        },
+        {
+          "name": "Spirobank II",
+          "desc": "Espirómetro portátil para uso autónomo, con PC o con tablet.",
+          "models": [
+            "Plus",
+            "Smart",
+            "Light",
+            "Basic"
+          ]
+        },
+        {
+          "name": "Minispir",
+          "desc": "Espirómetro para PC que funciona con el software MIR Spiro.",
+          "models": [
+            "Minispir",
+            "Minispir Plus",
+            "Minispir Plus ESI"
+          ]
+        },
+        {
+          "name": "Uso personal",
+          "desc": "Flujo pico y FEV1 en el teléfono o la tablet, con oxímetro integrado opcional.",
+          "models": [
+            "Spirobank Smart",
+            "Spirobank Oxi",
+            "Smart One",
+            "Smart One Oxi"
+          ]
+        },
+        {
+          "name": "Cardionica",
+          "desc": "Electrocardiógrafo portátil de un canal."
+        },
+        {
+          "name": "MIR Spiro",
+          "desc": "Software de espirometría con integración a expedientes electrónicos y estándares ATS/ERS 2019."
+        }
+      ]
+    },
+    {
+      "slug": "gv-health",
+      "name": "GV Health",
+      "area": "Control de infecciones e higiene",
+      "tagline": "Prevención de infecciones e higiene ambiental para hospitales",
+      "meta": "GV Health en Panamá: desinfectante SoChlor, Life Protected Cleaner, kits para derrames, bolsas para desechos y delantales. Solis Import S.A.",
+      "has_content": true,
+      "logo": "gv-health.svg",
+      "website": "https://gvhealth.com/",
+      "description": [
+        "GV Health es una empresa británica, con sede en Stevenage, que reúne ciencia, tecnología y educación para la prevención de infecciones y la higiene ambiental en hospitales.",
+        "Trabaja con el Servicio Nacional de Salud del Reino Unido (NHS) y cuenta con certificaciones ISO 9001, ISO 13485 e ISO 14001."
+      ],
+      "highlights": [
+        {
+          "value": "ISO 13485",
+          "label": "además de ISO 9001 e ISO 14001"
+        },
+        {
+          "value": "NHS",
+          "label": "proveedor del sistema de salud del Reino Unido"
+        }
+      ],
+      "products": [
+        {
+          "name": "SoChlor",
+          "desc": "Tabletas desinfectantes de NaDCC que liberan ácido hipocloroso."
+        },
+        {
+          "name": "Life Protected Cleaner",
+          "desc": "Limpiador de pH neutro en láminas hidrosolubles de disolución rápida, para limpieza de ambientes."
+        },
+        {
+          "name": "Kits para derrames y absorbentes",
+          "desc": "Contención de derrames biológicos, citotóxicos y químicos."
+        },
+        {
+          "name": "Bolsas para segregación de desechos",
+          "desc": "Bolsas codificadas por color para desechos clínicos, citotóxicos y generales."
+        },
+        {
+          "name": "Delantales, batas y tabardos",
+          "desc": "Prendas desechables de protección de la línea Polycare."
+        },
+        {
+          "name": "Caja de cartón para cortopunzantes",
+          "desc": "Recipiente para el desecho de agujas y objetos cortopunzantes."
+        }
+      ]
+    },
+    {
+      "slug": "carestream-dental",
+      "name": "Carestream Dental",
+      "area": "Imagen dental digital",
+      "tagline": "Radiología e imagen digital para odontología",
+      "meta": "Carestream Dental en Panamá: CBCT CS 8200 3D, sensores RVG 6200, placas CS 7600, rayos X portátil CS 2500P. Solis Import S.A.",
+      "has_content": true,
+      "logo": "carestream-dental.png",
+      "website": "https://www.carestreamdental.com/",
+      "description": [
+        "Carestream Dental, con sede en Atlanta (Estados Unidos), desarrolla sistemas de imagen dental digital: tomografía CBCT, equipos panorámicos y cefalométricos, sensores intraorales, sistemas de placas de fósforo y cámaras intraorales.",
+        "Sus programas CS Imaging y CS 3D Imaging permiten ver y gestionar las imágenes 2D y 3D del consultorio."
+      ],
+      "highlights": [
+        {
+          "value": "2D + 3D",
+          "label": "imagen intraoral, extraoral y CBCT"
+        }
+      ],
+      "products": [
+        {
+          "name": "CS 8200 3D Advance Edition",
+          "desc": "Sistema extraoral CBCT 3D."
+        },
+        {
+          "name": "CS 9600",
+          "desc": "Sistema de imagen para otorrinolaringología (ORL)."
+        },
+        {
+          "name": "RVG 6200",
+          "desc": "Sensor intraoral digital con un flujo de trabajo sencillo."
+        },
+        {
+          "name": "CS 6200 Size 0",
+          "desc": "Sensor intraoral de tamaño pequeño."
+        },
+        {
+          "name": "CS 7600",
+          "desc": "Sistema de placas de fósforo con flujo de trabajo automatizado."
+        },
+        {
+          "name": "CS 2500P",
+          "desc": "Equipo de rayos X dental portátil, de mano."
+        },
+        {
+          "name": "CS 1300",
+          "desc": "Cámara intraoral."
+        }
+      ]
+    }
+  ],
+  "lines": [
+    {
+      "slug": "suturas-quirurgicas-absorbibles",
+      "parent": "atramat",
+      "name": "Suturas quirúrgicas absorbibles",
+      "area": "Atramat · Suturas",
+      "tagline": "Calidad y valor para el cirujano que los busca",
+      "meta": "Suturas quirúrgicas absorbibles Atramat en Panamá: PGA Rapid, PGA, PGLA 90, PGC25, PDX y catgut. Solis Import S.A.",
+      "cover": "absorbibles",
+      "description": [
+        "Línea de suturas absorbibles pensada para cirujanos que buscan calidad y buen valor. Se elabora con materias primas de calidad y sus procedimientos de calidad se verifican a diario."
+      ],
+      "highlights": [],
+      "products": [
+        {
+          "name": "PGA Rapid",
+          "desc": "Ácido poliglicólico de absorción rápida.",
+          "link": "pga-rapid"
+        },
+        {
+          "name": "PGA",
+          "desc": "Consulta por calibres y agujas disponibles."
+        },
+        {
+          "name": "PGLA 90",
+          "desc": "Consulta por calibres y agujas disponibles."
+        },
+        {
+          "name": "PGLA 90 Rápido",
+          "desc": "Consulta por calibres y agujas disponibles."
+        },
+        {
+          "name": "PGC25",
+          "desc": "Consulta por calibres y agujas disponibles."
+        },
+        {
+          "name": "PDX",
+          "desc": "Consulta por calibres y agujas disponibles."
+        },
+        {
+          "name": "Catgut",
+          "desc": "Consulta por calibres y agujas disponibles."
+        },
+        {
+          "name": "Catgut liso",
+          "desc": "Consulta por calibres y agujas disponibles."
+        }
+      ]
+    },
+    {
+      "slug": "suturas-quirurgicas-no-absorbibles",
+      "parent": "atramat",
+      "name": "Suturas quirúrgicas no absorbibles",
+      "area": "Atramat · Suturas",
+      "tagline": "Para cirujanos que buscan la mejor calidad y valor",
+      "meta": "Suturas quirúrgicas no absorbibles Atramat en Panamá. Calidad y valor para cada procedimiento. Solis Import S.A.",
+      "cover": "no-absorbibles",
+      "description": [
+        "Material de sutura no absorbible hecho para los cirujanos que buscan la mejor calidad y valor en sus procedimientos."
+      ],
+      "highlights": [],
+      "products": []
+    },
+    {
+      "slug": "suturas-quirurgicas-plus-antibacterianas",
+      "parent": "atramat",
+      "name": "Suturas quirúrgicas PLUS (antibacterianas)",
+      "area": "Atramat · Suturas",
+      "tagline": "Recubiertas con diacetato de clorhexidina",
+      "meta": "Suturas quirúrgicas PLUS antibacterianas Atramat con diacetato de clorhexidina en Panamá. Solis Import S.A.",
+      "cover": "plus",
+      "description": [
+        "Las suturas Atramat® Plus están recubiertas con diacetato de clorhexidina, un agente antibacteriano de amplio espectro que inhibe el crecimiento de bacterias."
+      ],
+      "highlights": [
+        {
+          "value": "Clorhexidina",
+          "label": "diacetato, antibacteriano de amplio espectro"
+        }
+      ],
+      "products": []
+    },
+    {
+      "slug": "pga-rapid",
+      "parent": "atramat",
+      "name": "PGA Rapid",
+      "area": "Atramat · Suturas absorbibles",
+      "tagline": "Ácido poliglicólico de rápida absorción",
+      "meta": "Sutura PGA Rapid Atramat en Panamá: ácido poliglicólico de rápida absorción, absorción total en 45 a 60 días. Solis Import S.A.",
+      "cover": "pga-rapid",
+      "description": [
+        "Sutura de ácido poliglicólico de rápida absorción, de uso general para aproximar tejidos blandos, piel (intradérmica) y mucosas. No está indicada para procedimientos cardiovasculares ni neurológicos.",
+        "Para cotizar, indica la cantidad, el calibre y el tamaño de aguja que necesitas."
+      ],
+      "highlights": [
+        {
+          "value": "50 %",
+          "label": "de su resistencia original al final de la primera semana"
+        },
+        {
+          "value": "45–60 días",
+          "label": "absorción total"
+        }
+      ],
+      "products": []
+    }
+  ],
+  "redirects": {
+    "project/tur-gmbh/": "project/tur/",
+    "project/tur-therapy/": "project/tur/"
+  }
+}

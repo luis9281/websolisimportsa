@@ -1,0 +1,15 @@
+# Fotos descargadas del sitio anterior (se regeneran con scripts/descargar_imagenes.py)
+_descargas/
+
+# Python
+__pycache__/
+*.pyc
+
+# Sistema / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+
+# Vistas previas temporales
+_preview*.html

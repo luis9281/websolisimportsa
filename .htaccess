@@ -1,0 +1,47 @@
+# Solis Import S.A. — configuración Apache (hosting compartido / cPanel)
+Options -Indexes
+DirectoryIndex index.html index.php
+ErrorDocument 404 /404.html
+
+# Archivos y carpetas que nunca deben verse desde internet
+<FilesMatch "(^\.|\.(bat|py|md|log|ini|txt\.bak)$|^build\.py$)">
+  Require all denied
+</FilesMatch>
+<Files "robots.txt">
+  Require all granted
+</Files>
+<Files "config.php">
+  Require all denied
+</Files>
+RedirectMatch 404 ^/(data|scripts|_descargas|imagenes-originales)(/|$)
+
+# Páginas antiguas duplicadas → página actual (ver "redirects" en data/brands.json)
+RedirectMatch 301 ^/project/(tur-gmbh|tur-therapy)/?$ /project/tur/
+# Marcas que ya no se distribuyen → catálogo
+RedirectMatch 301 ^/project/magnamed/?$ /productos/
+
+# Cabeceras de seguridad
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+# Velocidad: compresión y caché
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# Cuando el sitio ya tenga SSL activo, quita el # de estas líneas para forzar HTTPS:
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
